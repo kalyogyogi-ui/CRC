@@ -536,7 +536,12 @@ closes. Censorship — refusing to include a party's events — is subtler; the
 mitigations are procedural (multiple submission paths, inclusion SLAs in the
 consortium agreement, and the fact that censored parties hold signed, timestamped
 events whose *non-inclusion* is itself demonstrable against the anchored chain).
-The censorship scenario worth rehearsing: a manufacturer-heavy validator
+One design choice quietly removes the classic censorship *incentive*:
+because intra-block ordering carries no economic meaning in this schema
+(Section 7.4.1), there is no front-running to sell and no priority to
+auction — the only censorship worth attempting is suppression, which is
+the visible kind. The censorship scenario worth rehearsing: a
+manufacturer-heavy validator
 faction delays an independent recycler's mass-balance events during a
 contested EPR reporting season. The recycler's events are signed, its
 submission receipts (validators acknowledge receipt as a protocol matter)
