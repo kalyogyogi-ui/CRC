@@ -801,5 +801,10 @@ now designs in detail.
    crack morphology context). IEA-PVPS Task 13 Report T13-01:2014.
 8. Degen, C. L., F. Reinhard, and P. Cappellaro. "Quantum Sensing." *Reviews of
    Modern Physics* 89, no. 3 (2017): 035002.
+9. Bundesamt für Sicherheit in der Informationstechnik. *Protection Profile for
+   the Gateway of a Smart Metering System (BSI-CC-PP-0073).* Bonn: BSI. The
+   metering-fleet precedent of Section 3.3.1.
+10. Plattform Industrie 4.0 / IDTA. *Asset Administration Shell Specifications.*
+    The industrial digital-twin data models discussed in Section 3.2.
 
 \newpage
