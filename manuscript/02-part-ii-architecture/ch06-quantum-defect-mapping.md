@@ -740,9 +740,13 @@ R3 asymmetry, since reproducing a specified bulk defect population exceeds
 what process control achieves even for legitimate production; and — the
 design's central economy — identical with the condition
 evidence the lifecycle record needs anyway. NV magnetometry supplies current-path
-maps that see beneath optical modalities; the two-layer decomposition separates
-identity (stable structure) from condition (evolving damage); cross-modal locking,
-challenge-parameterized measurement, and supersession-with-provenance turn a
+maps that see beneath optical modalities, at room temperature and with a
+clear if unfinished road to line speed; the two-layer decomposition separates
+identity (stable structure) from condition (evolving damage), with the
+decomposition itself versioned as scientific understanding matures;
+cross-modal locking, challenge-parameterized measurement drawing on a
+bias-response surface never published in full, and
+supersession-with-provenance guarded by evolution-plausibility checks turn a
 measurement into a binding. On that binding stands the four-step verification
 workflow: authenticate the record against public anchors, police the evidence graph,
 verify matter against template on a pre-committed random sample, and decide with
