@@ -113,12 +113,14 @@ numbered for the assurance cases of Section 8.7:
   custodian, or any adversary.
 - **G5 (Bounded fraud economics).** No *repeatable* fraud against G1–G4 has
   expected profit exceeding expected cost under the adversary budgets of
-  Table 8.1.
+  Table 8.1 — the property that converts the other four from mechanisms
+  into a market-shaping fact.
 
 Note the deliberate modesty: nothing promises that no fraud ever succeeds
 (G5 bounds profit, not incidence), nothing promises completeness (Section
 5.7 already conceded it), and nothing promises confidentiality here (that is
-Chapter 10's property set, threatened by a different adversary map). Every
+Chapter 10's property set, threatened by a different adversary map — the
+data broker and the competitor rather than the counterfeiter). Every
 attack family below is an attempt on one or more G's, and every defense
 pattern is priced against the G it protects.
 
