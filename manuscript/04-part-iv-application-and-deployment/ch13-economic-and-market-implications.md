@@ -111,6 +111,11 @@ chapter treats it.
 
 ## 13.2 Secondary Equipment Markets
 
+The first market gets the longest treatment because it is where the
+information rent is visible to the naked eye — a posted price spread
+anyone can check against broker listings — and because its mechanics
+recur in every market after it.
+
 **The transaction today.** Used modules trade by the pallet at steep discounts to
 new — market reports and broker listings through the mid-2020s show functional
 used modules clearing at roughly 30–60% below new-equivalent pricing even when
@@ -144,6 +149,11 @@ filter stops being the only quality signal in the channel. Brokers do not
 disappear in the verified world; their business shifts from
 information arbitrage to logistics, aggregation, and market-making — the
 functions that survive transparency in every market that has acquired it.
+The transition's early signal to watch for: brokers themselves adopting
+verification as a service tier, charging for lots they have V2-sampled —
+the intermediary converting from the opacity's beneficiary to the
+transparency's retailer, which is how such transitions historically
+begin.
 
 **What verifiable history changes.** A module with an anchored record —
 enrollment template, commissioning date, condition-record chain, cohort
