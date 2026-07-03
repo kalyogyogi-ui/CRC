@@ -112,7 +112,12 @@ ledger carries:
 Verification then composes: fetch payload from any store, hash it, compare against
 the on-chain digest, check the digest's inclusion in an anchored block (Section 2.2's
 Merkle machinery). The payload store needs *availability*, not trustworthiness — a
-malicious store can withhold data but cannot alter it undetectably.
+malicious store can withhold data but cannot alter it undetectably. This
+one-way dependency is what makes the whole partition safe to operate across
+organizational boundaries: the consortium never has to audit a store's
+software, vet its administrators, or trust its operator's intentions, because
+the store holds no authority — only obligations, which the retrievability
+regime below measures.
 
 Withholding, however, is a real failure mode with a thirty-year horizon, and it gets
 a design answer, not a shrug. The pilot architecture of Chapter 11 uses **replicated
@@ -248,7 +253,13 @@ the active-device variant substitutes key generation in the secure element for
 fingerprint enrollment):
 
 1. **Physical completion.** The laminate exits lamination and framing; its structure
-   — grain patterns, as-built defect distribution — is now fixed.
+   — grain patterns, as-built defect distribution — is now fixed. Enrollment
+   any earlier (at cell sort, at stringing) would fingerprint components that
+   subsequent process steps still alter; any later adds handling between
+   measurement and identity that Section 8.3's substitution attack exploits.
+   The moment is not arbitrary: it is the earliest point at which the
+   fingerprint is final and the latest at which the factory's process custody
+   is unbroken.
 2. **Enrollment measurement.** In-line instrumentation (factory EL at minimum;
    quantum defect mapping per Chapter 6 where deployed) captures the structural
    fingerprint *as part of the existing QA flow* — the measurement most factories
@@ -347,7 +358,19 @@ record attests "this structure, observed on this date, controller X," with no fa
 history. The schema must represent this honestly as a distinct registration class
 rather than laundering it into factory-grade provenance; buyers and insurers then
 price the difference, which is exactly what markets with good information do
-(Chapter 13).
+(Chapter 13). Operationally, retroactive enrollment rides the same touchpoints
+the fleet already has: drone or handheld EL during scheduled inspections,
+repowering and repair visits, and — the highest-yield moment — the diligence
+campaigns of ownership transfers, where a buyer is already paying for
+condition measurement and the marginal cost of turning that measurement into
+an enrollment is a signature and an event. The one procedural difference from
+factory issuance matters enough to state: the enrolling party at a field
+touchpoint is typically *not* the manufacturer, so the registration's initial
+controller is the current owner, the manufacturer's product claims enter (if
+at all) as referenced credentials rather than co-signed facts, and any later
+manufacturer endorsement of the retroactive identity — matching it to shipment
+records, say — is its own attributable event that upgrades the record's
+provenance class visibly rather than silently.
 
 **What if the manufacturer is the adversary?** Ghost-shift production (Section 1.4.1)
 is registered by the same key as legitimate production. The ledger does not solve
@@ -402,7 +425,13 @@ Section 2.4 introduced the hybrid pattern; here is its mechanism. At a fixed int
 consortium ledger's new block headers and submits it in a transaction to a large
 public proof-of-stake chain. The consortium thereby publishes, irrevocably and
 world-readably, a commitment to its own history — a few dozen bytes disclosing
-nothing (Chapter 10 confirms the privacy analysis) and costing cents.
+nothing (Chapter 10 confirms the privacy analysis) and costing cents. The
+pattern's ancestry is worth acknowledging because it de-mystifies the design:
+this is Haber and Stornetta's 1991 newspaper-timestamping construction
+(Section 2.1.2) with the classified section replaced by a chain whose
+append-only property is enforced by staked billions rather than by printed
+archives — and, like the newspaper, the anchor's value comes entirely from
+being *someone else's* immutable medium.
 
 The anchor transaction's contents are worth specifying, because they are the
 entire public interface of the consortium and will be parsed by strangers for
@@ -757,7 +786,8 @@ are legal. That vocabulary is Chapter 5.
 
 1. Eberhardt, J., and S. Tai. "On or Off the Blockchain? Insights on Off-Chaining
    Computation and Data." In *Service-Oriented and Cloud Computing (ESOCC 2017)*,
-   3–15. Springer, 2017.
+   3–15. Springer, 2017. The systematic treatment of the partition pattern
+   Section 4.2 applies.
 2. Haber, S., and W. S. Stornetta. "How to Time-Stamp a Digital Document." *Journal
    of Cryptology* 3, no. 2 (1991): 99–111.
 3. Juels, A., and B. S. Kaliski. "PORs: Proofs of Retrievability for Large Files."
@@ -773,5 +803,8 @@ are legal. That vocabulary is Chapter 5.
    Geneva: ISO.
 7. Wüst, K., and A. Gervais. "Do You Need a Blockchain?" In *2018 Crypto Valley
    Conference on Blockchain Technology (CVCBT)*, 45–54. IEEE, 2018.
+8. Consultative Committee for Space Data Systems. *Reference Model for an Open
+   Archival Information System (OAIS).* CCSDS 650.0-M-3. The digital-preservation
+   discipline behind Section 4.2.1's format-longevity rules.
 
 \newpage
