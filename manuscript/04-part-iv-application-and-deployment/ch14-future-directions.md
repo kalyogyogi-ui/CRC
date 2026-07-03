@@ -765,7 +765,8 @@ disciplines that fits your temperament; the field's shortage is you.
 ## 14.9 Closing
 
 This book opened with an engineer unable to answer a simple question — *is this
-the module the paperwork describes?* — and has spent fourteen chapters building
+the module the paperwork describes?* — and has spent fourteen chapters, four
+appendices, and one pilot plant's worth of evidence building
 the machinery for a better answer: identity anchored in the physics
 manufacturing cannot control, records ordered and frozen by consensus among
 parties who distrust one another, verification decomposed into steps whose
