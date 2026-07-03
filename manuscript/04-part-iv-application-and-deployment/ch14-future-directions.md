@@ -2,7 +2,8 @@
 
 ## What This Chapter Covers
 
-A monograph should end by making itself obsolete: this chapter assembles the open
+A monograph should end by making itself obsolete, and this chapter is the
+mechanism: it assembles the open
 problems flagged throughout the book into a research agenda, organized by the
 communities that would have to do the work — measurement science, cryptographic
 systems, standards bodies, and the regulatory-economic interface. Problems are
@@ -765,8 +766,8 @@ disciplines that fits your temperament; the field's shortage is you.
 ## 14.9 Closing
 
 This book opened with an engineer unable to answer a simple question — *is this
-the module the paperwork describes?* — and has spent fourteen chapters, four
-appendices, and one pilot plant's worth of evidence building
+the module the paperwork describes?* — and has spent fourteen chapters, two
+appendices, and one pilot plant's worth of measured evidence building
 the machinery for a better answer: identity anchored in the physics
 manufacturing cannot control, records ordered and frozen by consensus among
 parties who distrust one another, verification decomposed into steps whose
