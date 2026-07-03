@@ -82,7 +82,8 @@ follow, and they reorganize the whole analysis:
    migrations. The design target is not "add Dilithium" but *algorithm agility as
    a permanent property of the schema*.
 
-Each consequence rewards one more paragraph of unpacking. The
+Each consequence rewards one more paragraph of unpacking, because each
+reverses a habit the payment framing installed. The
 *retrospective-verification* workload (consequence 1) is not a rare
 appellate scenario but the system's routine: every Step-1 verification of a
 mid-life asset evaluates signatures made five, ten, twenty years earlier,
