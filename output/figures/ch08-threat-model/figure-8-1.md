@@ -1,0 +1,33 @@
+# Figure 8.1
+
+**Attack surface by layer of the Figure 3.2 stack. Numbered attack families are treated in Sections 8.3–8.6.**
+
+Source chapter: `ch08-threat-model.md`
+
+![Figure 8.1](figure-8-1.png)
+
+## Mermaid source
+
+```mermaid
+flowchart TB
+    subgraph GOV [Governance layer]
+        G1[F10 Registrar corruption]
+        G2[F11 Validator collusion / capture]
+    end
+    subgraph LEDG [Ledger & contract layer]
+        L1[F8 Contract defects]
+        L2[F9 Key theft & succession attacks]
+    end
+    subgraph ORC [Oracle & sensing layer]
+        O1[F5 Sensor spoofing at the scene]
+        O2[F6 Instrument compromise]
+        O3[F7 Provenance-chain manipulation]
+    end
+    subgraph PHYS [Physical binding layer]
+        P1[F1 Identity cloning / relabeling]
+        P2[F2 Enrollment-time substitution]
+        P3[F3 Replica / decal presentation]
+        P4[F4 Identity retirement & laundering]
+    end
+    PHYS --> ORC --> LEDG --> GOV
+```

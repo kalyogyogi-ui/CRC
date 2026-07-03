@@ -1,0 +1,15 @@
+flowchart TB
+    subgraph BlockN [Block header n]
+        PH[prev-header hash] --- MR[Merkle root] --- TS[timestamp / consensus data]
+    end
+    MR --> H1234[H1234]
+    H1234 --> H12[H12]
+    H1234 --> H34[H34]
+    H12 --> R1[H R1]
+    H12 --> R2[H R2]
+    H34 --> R3[H R3]
+    H34 --> R4[H R4]
+    style R3 fill:#f6e3c5,stroke:#a8781f
+    style R4 fill:#dbe9f6,stroke:#2c5f8a
+    style H12 fill:#dbe9f6,stroke:#2c5f8a
+    BlockN -.->|header chain| BlockN1[Block header n+1]

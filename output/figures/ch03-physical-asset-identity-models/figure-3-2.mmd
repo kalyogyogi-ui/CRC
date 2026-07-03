@@ -1,0 +1,20 @@
+flowchart TB
+    subgraph L4 [Claims layer]
+        VC1[Verifiable credentials:<br>test reports, commissioning,<br>inspections, warranty]
+    end
+    subgraph L3 [Naming layer]
+        DID[Asset DIDs + DID documents:<br>controller, binding references,<br>succession history]
+    end
+    subgraph L2 [Record layer — Ch. 2, 4, 5]
+        LED[Consortium ledger:<br>registry, lifecycle state machine,<br>anchored to public chain]
+    end
+    subgraph L1 [Binding layer — this chapter, Ch. 6]
+        AB[Active: device keys<br>in secure elements]
+        PB[Passive: structural<br>fingerprints / defect maps]
+    end
+    VC1 --> DID
+    DID --> LED
+    LED --> AB
+    LED --> PB
+    AB --> HW[Physical asset]
+    PB --> HW

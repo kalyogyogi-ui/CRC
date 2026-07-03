@@ -1,0 +1,8 @@
+flowchart LR
+    PHY[Physical<br>measurement] --> INS[Instrument<br>secure element<br>signs raw data]
+    INS --> PROC[Processing step:<br>template / feature<br>extraction, signed]
+    PROC --> ATT[Attestation:<br>claim + input digests<br>+ corroborations]
+    ATT --> SM[Lifecycle contract:<br>schema + corroboration<br>class checks]
+    SM --> LEDG[Ledger commit]
+    CAL[Calibration events<br>instrument's own DID] -.-> INS
+    CO[Corroborating<br>signer / modality] -.-> ATT

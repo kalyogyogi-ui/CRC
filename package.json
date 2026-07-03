@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "**Immutable Identity, Lifecycle Traceability, and Integrity Verification for Solar and Renewable Infrastructure**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyogyogi-ui/CRC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalyogyogi-ui/CRC/issues"
+  },
+  "homepage": "https://github.com/kalyogyogi-ui/CRC#readme",
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.16.0"
+  }
+}
