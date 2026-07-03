@@ -179,6 +179,11 @@ the inequality binds under any defensible forecast, and the standardization
 milestones already passed (NIST's 2024 publication of ML-KEM, ML-DSA, and SLH-DSA,
 with migration guidance following) remove the "nothing to migrate to" excuse.
 
+The inequality's virtue is that it converts an unanswerable question (when
+will the machine exist?) into three answerable ones (how long must this
+data live? how long does our slowest migration take? what is the earliest
+arrival we cannot rule out?) — and for this system two of the three
+answers are matters of contract and engineering rather than forecast.
 Two refinements sharpen the inequality for this domain. First, \(x\) is not
 uniform across the record: a custody event's evidential relevance peaks
 within years (transport disputes are prompt), while registration and
@@ -202,7 +207,8 @@ the only posture a thirty-year system can defend.
 ### 9.2.1 How the Long-Lived Peers Handle It
 
 Asset identity is not the first record system to face algorithm mortality,
-and the peers' answers calibrate this chapter's. Long-term digital archives
+and the peers' answers calibrate this chapter's — both the patterns worth
+borrowing and the cost curves worth avoiding. Long-term digital archives
 (national libraries, the OAIS community of Section 4.2.1) converged on
 exactly the P1 shape a decade ago: periodic re-timestamping of holdings
 under fresh algorithms, standardized in the evidence-record syntax the
@@ -350,7 +356,9 @@ authority now rests on a checkable fact: they were fixed in an anchored structur
 *at a time when A was still strong* — forging them later requires having beaten A
 before the re-anchor, a bounded and dated claim rather than an eternal one.
 Re-anchoring is cheap (one traversal, one event), repeatable per transition, and
-retroactively protects records whose authors are long gone. It is the direct
+retroactively protects records whose authors are long gone — the only
+pattern in the kit that can defend the dead, which is why it runs first
+and oftenest. It is the direct
 implementation of Section 9.1's principle: evidential weight moves from signature
 to anchored structure.
 
@@ -402,7 +410,9 @@ time-contextual check is the court's analysis, executable in milliseconds.
 The pattern's demand on the present is only that the policy register be
 maintained *now*, unambiguously, with effective heights — because the one
 thing the 2049 adjudicator cannot reconstruct is what 2027 believed about
-its own algorithms if 2027 never wrote it down.
+its own algorithms if 2027 never wrote it down. Every jurisdiction's
+evidence law will phrase the analysis differently; the register's job is to
+make sure that, however phrased, the analysis has facts to run on.
 
 **P3 — Re-attestation of living bindings.** Signatures can be re-anchored;
 *hardware* cannot. Secure elements with ECC roots (Table 9.1, row 2) must be
@@ -412,7 +422,13 @@ hardware-replacement cadence of inverters (10–15 years), which conveniently fi
 inside any plausible \(z\). Passive assets need no P3: their binding is physics
 (Table 9.1's last row), and only the *records about them* need P1/P2.
 
-P3's operational shape matters for procurement now. The re-attestation event
+P3 also has a graceful-degradation property worth noticing: a device whose
+element is never re-attested does not fall out of the system — its
+historical attestations remain valid under P2, its telemetry remains
+corroborating context, and only its *live* challenge-response assurance
+decays to era-1 strength, which verifiers weight accordingly. Migration
+laggards get weaker evidence, not exile — the incentive gradient without a
+cliff. P3's operational shape matters for procurement now. The re-attestation event
 requires an element capable of a PQC handshake — either a replacement
 element (the normal case at hardware refresh) or a firmware-upgradeable one
 (available in current-generation secure elements for lattice schemes, not
@@ -574,12 +590,16 @@ adjudicator's verifier proceeds:
    re-enrollment chain, and a fresh 2049 measurement form a physically
    consistent evolution (R5) that a fabricated 2027 event could not have
    predicted (Section 9.5). The claim's physical narrative and its
-   documentary narrative agree.
+   documentary narrative agree — twenty-two years of weathering, one
+   documented hail event, and a degradation trajectory that no 2027
+   forger could have authored in advance.
 5. *Decide, with residuals named.* What remains unverifiable in 2049 is
    what was unverifiable in 2027 — Section 5.7's completeness residual —
    plus the bounded hypothesis of pre-2033 forgery by parties who
    controlled era-1 keys, weighed against the corroboration structure and
-   the physical cross-check.
+   the physical cross-check. The adjudicator decides on evidence whose
+   quality the intervening decades did not erode, which was the entire
+   assignment.
 
 Total machinery invoked: the anchors, two register lookups, one Merkle
 traversal, one field measurement. Nothing heroic, nobody's cooperation
