@@ -102,7 +102,7 @@ must survive the failure of any single family.
 - **ML-DSA (lattice-based, formerly Dilithium)** as the workhorse event-signature
   algorithm: performant, standardized, implementable in next-generation secure
   elements. Signatures of ~2–4 kB inflate the 0.9 kB envelope of Section 7.6
-  several-fold — Table 7.3's margins absorb this without strain, one more dividend
+  several-fold — Table 7.4's margins absorb this without strain, one more dividend
   of designing for megabytes, not gigabytes.
 - **SLH-DSA (hash-based, formerly SPHINCS+)** for the *registrar and governance
   roles*: slower and bulkier (~8–50 kB), but resting on hash assumptions only —

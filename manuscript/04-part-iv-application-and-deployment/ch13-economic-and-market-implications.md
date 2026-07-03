@@ -124,7 +124,7 @@ compliance is a cost center whose size the architecture reduces. Battery
 passport compliance (mandatory, dated) requires per-unit lifecycle records with
 defined access — the marginal cost of *verifiable* records over self-declared
 ones is the batching-and-anchoring infrastructure of Chapter 7, which
-Table 7.3 priced in the hundreds of thousands per large plant-lifetime against
+Table 7.4 priced in the hundreds of thousands per large plant-lifetime against
 compliance-team costs that routinely exceed that annually. Certificate schemes
 (REC/GO) carry fraud discounts — buyers of unbundled certificates price
 double-counting risk — and an equipment-truth layer (Section 10.4) removes the
