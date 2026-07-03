@@ -21,9 +21,18 @@ servers decides nothing.
 
 ## 4.1 The Workload, Quantified First
 
-Architecture follows workload. Table 4.1 estimates the data a single utility-scale PV
-plant generates, separated into the two categories that Section 3.2 distinguished:
-sparse evidential events and continuous operational telemetry.
+Architecture follows workload. The first-wave projects of Section 1.5 mostly
+inverted this order — platform first, workload discovered in production — and
+paid for it twice: once in re-architecture when the volumes arrived, and once
+in credibility when the re-architecture became the story. This chapter
+therefore begins with numbers that any reader can check against their own
+fleet. Table 4.1 estimates the data a single utility-scale PV plant generates,
+separated into the two categories that Section 3.2 distinguished: sparse
+evidential events and continuous operational telemetry. The specific values
+carry error bars of at least a factor of two in either direction — inspection
+policies, image resolutions, and telemetry cadences vary — but the
+*ratios* between rows, which is what the architecture is built on, are robust
+across any plausible parameter choice.
 
 **Table 4.1** Approximate data workload for a 100 MW PV plant (~250,000 modules,
 ~800 string inverters), by record category.
