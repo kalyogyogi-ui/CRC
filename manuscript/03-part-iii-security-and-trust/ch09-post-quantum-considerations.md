@@ -5,7 +5,10 @@
 A solar module warranted in 2026 will still be generating claims-relevant evidence
 in 2051. Every signature, digest, and anchor defending that evidence was made with
 algorithms chosen in the 2020s — and the working assumption of this chapter is that
-some of those algorithms will not survive the asset. The chapter explains why the
+some of those algorithms will not survive the asset. This is not pessimism
+about any particular algorithm; it is actuarial respect for the base rate
+at which cryptography ages, quantum computation being merely the
+best-advertised of its hazards. The chapter explains why the
 quantum threat bears on asset-identity systems *differently and more severely* than
 on the financial blockchain systems that dominate the post-quantum discussion;
 derives the design consequences (which turn out to be schema and governance
