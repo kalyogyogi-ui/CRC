@@ -60,7 +60,8 @@ its size in each market is bounded by the *cost of the next-best verification
 alternative* — a discipline that keeps the numbers honest, because that cost is
 usually public.
 
-Two companion ideas from the same literature complete the toolkit.
+Two companion ideas from the same information-economics literature
+complete the toolkit, each carrying a distinct piece of the chapter.
 *Signaling* (Spence): where quality is unobservable, sellers of good
 assets seek costly signals that bad-asset sellers cannot profitably
 imitate — and a verifiable history is close to the ideal signal, because
