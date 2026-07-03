@@ -68,7 +68,9 @@ interoperability problem and its venues (12.5); and the framework's
 edges and outward export (12.6), where the honest boundary-drawing
 lives.
 
-**Table 12.1** The framework mapped across asset classes.
+**Table 12.1** The framework mapped across asset classes. Bold entries
+mark the chapter's two structural findings: the open cell-identity
+problem and the one asset class whose adoption clock is set by statute.
 
 | | PV module | Battery pack/cell | Wind blade/bearing | Inverter-class IoT |
 |---|---|---|---|---|
@@ -193,7 +195,8 @@ them, and therefore the commercial weight on the paths solar treats as
 edge cases.
 
 The actor map differs from solar's in ways that reshape consortium
-design. Battery custody chains run through automotive OEMs (whose
+design, and getting it on paper early is the battery deployment's
+Phase-0 homework. Battery custody chains run through automotive OEMs (whose
 warranty and recall machinery dwarfs solar's), fleet operators,
 dismantlers and authorized treatment facilities, repurposers (a new
 legally-defined actor class the regulation created), integrators, and
@@ -512,7 +515,9 @@ currently lack — verifiable device identity, certified capability
 (config-change history), and location class for the fleet an aggregator
 claims to control. "Which devices, with what certified behavior, does
 this VPP actually command?" is an asset-identity question this
-architecture answers; "did the VPP deliver its flexibility bid?" is a
+architecture answers — and one that flexibility-market rules increasingly
+require aggregators to answer credibly at prequalification; "did the VPP
+deliver its flexibility bid?" is a
 market-settlement question it deliberately does not. Deployments that
 keep the boundary keep both systems honest; those that blur it inherit
 the energy-trading scope creep Section 1.6 excluded on page one.
@@ -521,7 +526,9 @@ Two class-specific notes complete the long tail. *EV charging
 infrastructure* adds a commercial dimension the other classes lack:
 chargers are metrologically certified billing instruments, so their
 identity records intersect legal metrology (the meter-fleet precedent of
-Section 3.3.1 applies nearly verbatim) and their config-change history is
+Section 3.3.1 applies nearly verbatim — Germany's charging-calibration
+regime already mandates signed meter records per session) and their
+config-change history is
 also a *tariff-integrity* record — the regulator's question is not only
 "is the grid behavior certified?" but "was the customer billed by the
 firmware the certificate covers?" *Heat pumps and behind-the-meter
