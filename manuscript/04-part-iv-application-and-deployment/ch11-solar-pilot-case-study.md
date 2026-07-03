@@ -90,7 +90,11 @@ Section 10.5 checklist, negotiated to signature), accreditation criteria,
 custody contracts, and fee schedule. Longest-feeling phase, entirely
 lawyers and committees, and in retrospect under-resourced: two governance
 questions deferred here (the co-signing window, the sub-tier work-order
-integration) returned as the year's two operational incidents.
+integration) returned as the year's two operational incidents. The
+phase's one unqualified success was sequencing the agreement *before* any
+technology procurement — every vendor conversation thereafter happened
+against decided requirements rather than shaping them, an ordering the
+first-wave consortium histories of Section 1.5 recommend by counterexample.
 
 *Phase 1 — Factory integration (three months, overlapping).* Registrar
 agent development against the OEM's manufacturing-execution system,
@@ -247,7 +251,8 @@ Chapter 13 identifies as decisive (factory, project delivery, insurance,
 adjudication) — and instrumented from day one, which is why this section
 can report numbers rather than impressions.
 
-**S1 — Production day.** Each line emits ~1,400 modules/shift. Per module: EL
+**S1 — Production day.** The scenario that had to be boring for the
+program to survive, and was. Each line emits ~1,400 modules/shift. Per module: EL
 capture and flash test in the existing QA cell (cycle cost of enrollment: the
 template extraction, ~2 s of compute, zero added handling — the Section 4.3
 economics realized); registrar agent accumulates envelopes, builds a 2,048-leaf
@@ -327,7 +332,9 @@ answer is asynchrony with the gap recorded, never waiver with the gap
 hidden.
 
 **S3 — The insurer's annual verification.** The Chapter 6 workflow as a
-subscription: Step 1–2 (record authenticity + evidence-graph policy) run
+subscription — and the scenario the insurer's own board had made a
+condition of its program participation, which concentrated minds:
+Step 1–2 (record authenticity + evidence-graph policy) run
 continuously by the insurer's client against headers and anchors; Step 3 annually
 — sampling design (n = 380, stratified by production week and string position,
 95/5 confidence on the fleet fraction outside degradation envelope) committed to
@@ -382,8 +389,9 @@ evidence rather than by accusation, which did more for the O&M
 relationship than the finding cost it.
 
 **S4 — Warranty adjudication rehearsal.** A staged dispute (real modules, agreed
-fiction): owner claims accelerated degradation on 210 modules of one production
-week. The evidence DAG did what Chapter 5 designed it to do: claim event
+fiction, both parties' real counsel and a real arbitrator engaged under
+the program's budget): owner claims accelerated degradation on 210 modules
+of one production week. The evidence DAG did what Chapter 5 designed it to do: claim event
 references commissioning + three condition records; OEM's response references the
 same records plus factory Tier-2 first-article maps; the adjudicating engineer
 re-executed the provenance chains (Section 4.5's determinism paying off — two
@@ -393,7 +401,12 @@ was the finding that *both* parties' counsel accepted anchored ledger extracts
 without contesting authenticity — the first indication that Step-1 verification
 has the evidentiary standing the whole design wagers on.
 
-The eleven days decompose instructively: two for pleadings against the
+The rehearsal's all-in cost — adjudicator fees, counsel time on both
+sides, the sampling campaign, and program staff — came to roughly a tenth
+of the OEM's reported average for comparable live disputes, with the
+usual caveat that a rehearsal lacks a real dispute's motivated
+obstruction. The eleven days decompose instructively: two for pleadings
+against the
 stipulated-evidence clause (Section 10.3's arbitration design, exercised);
 five for the adjudicator's independent re-execution of the evidence graph
 — including the deliberately planted complication, a condition record
@@ -426,7 +439,10 @@ price was set (the divestment was fictional), so the exercise produced no
 premium datum for Section 11.7's problem 5 — but the fund's committee saw
 a five-day diligence cycle on an asset class whose norm is six weeks, and
 the program counts their subsequent enthusiasm as its most consequential
-unmeasured result.
+unmeasured result. The scenario's other yield was procedural: the
+disclosure-policy decisions made under a fictional deadline are now the
+template the real transaction will start from, which is what rehearsals
+are for.
 
 ## 11.4 The Contract Suite in Walkthrough
 
@@ -701,7 +717,9 @@ engineering effort belong.
 ## 11.8 Measured Results
 
 The scattered numbers above, collected for the reader who will be asked
-"but what did it actually do?" in a steering committee.
+"but what did it actually do?" in a steering committee — and, per the
+book's evidence discipline, presented with their baselines' provenance
+and their caveats attached rather than rounded into a brochure.
 
 **Table 11.2** Pilot key results, year one. Baselines are the insurer's
 and OEM's own prior-practice figures for comparable assets, as reported to
