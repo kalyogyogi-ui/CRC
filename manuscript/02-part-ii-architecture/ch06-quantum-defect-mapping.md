@@ -15,7 +15,9 @@ the four identity properties of Chapter 1 finally get their physical root. Porti
 Sections 6.4–6.6 are the subject of my pending patent application; as promised in the
 Preface, the ideas are explained fully, and readers evaluating alternative
 integrity-verification mechanisms will find the workflow of Section 6.6 transfers to
-any binding modality that satisfies the requirements of Section 6.5.
+any binding modality that satisfies the requirements of Section 6.5. Section 6.9
+states the intellectual-property posture plainly so that no reader has to
+infer it from omissions.
 
 A note on posture. Quantum sensing attracts more enthusiasm than scrutiny, and a
 chapter like this one earns trust by being exact about limits. I have tried to state
@@ -732,8 +734,11 @@ knowing its author's stake; that is what the disclosure is for.
 
 The defect structure of a photovoltaic device is manufacturing's uncontrolled
 residue, and that is exactly what makes it the strongest available anchor for
-passive identity: unique by physics, unforgeable at reasonable cost by the R3
-asymmetry, and — the design's central economy — identical with the condition
+passive identity: unique by physics across grain structure, dislocations,
+precipitates, and process stochastics; unforgeable at reasonable cost by the
+R3 asymmetry, since reproducing a specified bulk defect population exceeds
+what process control achieves even for legitimate production; and — the
+design's central economy — identical with the condition
 evidence the lifecycle record needs anyway. NV magnetometry supplies current-path
 maps that see beneath optical modalities; the two-layer decomposition separates
 identity (stable structure) from condition (evolving damage); cross-modal locking,
