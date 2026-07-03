@@ -41,7 +41,10 @@ classes recur, with sharply different capabilities and — the modeling discipli
 this chapter maintains throughout — different *budgets rationally bounded by the
 value at stake*:
 
-**Table 8.1** Adversary classes for asset-identity systems.
+**Table 8.1** Adversary classes for asset-identity systems. The rightmost
+column is the analytical engine of the whole chapter: rational budgets bound
+rational attacks, and the defenses are sized against the budgets rather than
+against theatrical worst cases.
 
 | Adversary | Motivation | Capabilities | Rational budget bound |
 |---|---|---|---|
@@ -339,7 +342,9 @@ to it, and what the population of all such moments looks like in aggregate.
 **F5 — Scene spoofing.** Manipulate what an honest instrument measures: heat or
 shade the scene during thermography, bias-starve strings during EL sampling,
 condition the battery before an SoH measurement, schedule inspections around known
-defects. The instrument signs faithfully; the *scene* lied. Defenses:
+defects. The instrument signs faithfully; the *scene* lied — the attack that
+no amount of instrument hardening touches, which is why it gets the layer's
+longest treatment. Defenses:
 environmental co-recording (irradiance, temperature, bias telemetry signed into
 the same payload — anomalous measurement conditions become visible in the
 evidence); operating-point randomization (the same challenge logic of Section 6.4,
@@ -616,11 +621,19 @@ Two cross-cutting judgments close the analysis. First, **the system's security i
 statistical, not absolute, and should be advertised that way**: individual attack
 instances at the physical layer can succeed; what the architecture prevents is
 *profitable, repeatable, silent* fraud — each pattern either raises per-unit cost
-above per-unit prize (D1–D3) or converts repetition into detection (D4–D5).
+above per-unit prize (D1–D3) or converts repetition into detection (D4–D5). A
+marketing claim of absolute security would not merely be false; it would be
+counterproductive, because relying parties who believe it stop performing
+the sampled verifications on which the statistical guarantees depend — the
+security equivalent of a vaccination program undermined by its own success
+story.
 Second, **the weakest links are procedural**: enrollment integrity and registrar/
 calibration accreditation carry more of the system's real security than any
 cryptographic component, which is why the governance chapter (Chapter 10) and the
-economics chapter (Chapter 13) are security chapters in disguise.
+economics chapter (Chapter 13) are security chapters in disguise. The
+corollary for budget committees: a deployment that spends heavily on
+consensus hardening while staffing registrar audit thinly has arranged its
+armor over the parts of the body the enemy is not aiming at.
 
 The consolidated view supports a residual-risk register — the list a
 deployment's risk committee should own, review, and re-price annually,
@@ -661,8 +674,9 @@ holds the compounding advantage.
 
 ## 8.7 Exercising the Model: Red Teams and Assurance Cases
 
-A threat model on paper decays; the chapter closes with the practices that
-keep it live. **Structured red-teaming**: annually, a team with full design
+A threat model on paper decays — instruments change grade, markets change
+prizes, and adversaries read books like this one; the chapter closes with
+the practices that keep it live. **Structured red-teaming**: annually, a team with full design
 knowledge and realistic budgets attempts one attack per family against a
 test enclave — the pilot's first exercise produced two findings that
 reshaped this chapter (the ringer variant of F3, discovered by a red team
@@ -670,7 +684,11 @@ technician bored with decal fabrication, and a replay window in an early
 provenance-chain implementation, closed by the nonce discipline of
 Section 4.5). Red-team economics should mirror Table 8.1's budgets: an
 exercise allowed to spend a million dollars attacking a forty-dollar prize
-proves nothing either way. **Assurance cases**: for each defense pattern, a
+proves nothing either way. Scope should rotate across the layers on a
+multi-year cycle — physical binding one year, oracle and scene the next,
+governance tabletop exercises (which cost meeting rooms, not laboratories)
+every year, because the procedural layers decay fastest and rehearse
+cheapest. **Assurance cases**: for each defense pattern, a
 maintained argument — claims, evidence, assumptions — in the safety-case
 style, reviewed when any assumption's supporting fact changes (an
 instrument-grade downgrade, a new imaging modality, a PQC milestone). A
@@ -689,6 +707,22 @@ confirmed or suspected attack instance becomes an `EVT_AUDIT`-class record
 and a model revision — feeding the same evidential machinery the system
 runs on, because a security process that does not eat its own cooking has
 no standing to recommend the meal.
+
+Disclosure norms round out the practice set, and the sector should decide
+them before its first public incident rather than during it. The
+consortium's transparency report discloses incident *classes* and
+remediation status on a fixed cadence; affected relying parties are
+notified individually within contractual windows; and full technical
+detail follows the coordinated-disclosure clock familiar from software
+security, with the wrinkle that some physical-layer findings (an
+instrument-fleet compromise, a viable F3 technique) shift fraud economics
+sector-wide and warrant coordination through the certification bodies
+rather than a lone consortium's blog post. The temptation to suppress —
+strong in any industry that sells trust — is answered by the architecture
+itself: incidents leave anchored traces, suppression is eventually
+provable, and a consortium caught hiding a breach has spent its entire
+capital in one transaction. Publish early; the system's whole thesis is
+that verifiable candor outperforms managed opacity.
 
 ## 8.8 Chapter Summary
 
