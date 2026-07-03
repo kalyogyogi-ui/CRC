@@ -131,7 +131,13 @@ already operates something twin-like: inverter vendors maintain per-device telem
 histories; plant asset-management platforms hold component registers with maintenance
 records.
 
-It is tempting to say the asset identity record of this book *is* a digital twin, but
+The lineage is worth one sentence of respect before the critique: the twin
+concept earned its keep in programs where a physical article's virtual
+counterpart carried real engineering authority — configuration-managed, its
+divergence from the article a reportable event — and that discipline, more than
+the technology, is what the DER industry's twin-like platforms have not
+inherited. It is tempting to say the asset identity record of this book *is* a
+digital twin, but
 the equation obscures the two properties twins conventionally lack. First, twins are
 *operational* artifacts, owned and mutable by whoever operates the platform — they
 optimize performance, not evidence. Nothing prevents retroactive revision, and their
@@ -778,7 +784,9 @@ now designs in detail.
 
 1. Grieves, M., and J. Vickers. "Digital Twin: Mitigating Unpredictable, Undesirable
    Emergent Behavior in Complex Systems." In *Transdisciplinary Perspectives on
-   Complex Systems*, 85–113. Springer, 2017.
+   Complex Systems*, 85–113. Springer, 2017. The origin of the twin concept in
+   lifecycle management; read alongside the AAS specifications for the current
+   industrial form.
 2. World Wide Web Consortium. *Decentralized Identifiers (DIDs) v1.0.* W3C
    Recommendation, 19 July 2022.
 3. World Wide Web Consortium. *Verifiable Credentials Data Model v2.0.* W3C
