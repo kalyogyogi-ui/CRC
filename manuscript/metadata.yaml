@@ -1,0 +1,15 @@
+---
+title: "Blockchain-Based Identity and Provenance for Distributed Energy Assets"
+subtitle: "Immutable Identity, Lifecycle Traceability, and Integrity Verification for Solar and Renewable Infrastructure"
+author: "[AUTHOR NAME — TO BE SUPPLIED]"
+publisher: "CRC Press / Taylor & Francis"
+rights: "© [YEAR] [AUTHOR NAME]. All rights reserved. Draft manuscript — not for distribution."
+lang: en-US
+documentclass: book
+fontsize: 11pt
+geometry: "paperwidth=6.85in, paperheight=9.61in, margin=1in"
+toc: true
+toc-depth: 2
+numbersections: true
+link-citations: true
+---
