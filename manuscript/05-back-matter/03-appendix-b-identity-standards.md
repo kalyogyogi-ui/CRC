@@ -30,7 +30,7 @@ and the interoperability layers S1–S5 of Table 14.1.
 | Secure element key (TPM-class) | ● | ● | ● | ● | — | ● | Inverters, BMS, meters, controllers |
 | PUF-derived key | ● | ◐ (aging drift) | ● | ● | — | ◐ | Cost-sensitive electronics |
 | EL structural fingerprint | ● | ◐ (crack evolution) | ● | ◐ | ● | ● | PV modules — routine tier |
-| Quantum defect map (Ch. 6) | ● | ◐→● (M1 open) | ● | ● | ● | ◐ (M3 open) | PV modules — high-assurance tier |
+| Structural defect map (Ch. 6) | ● | ◐→● (M1 open) | ● | ● | ● | ◐ (M3 open) | PV modules — high-assurance tier |
 | Impedance/formation signature | ◐ | ○–◐ | ◐ | ◐ | ◐ | ◐ | Battery cells — open problem M4 |
 | Composite ply/resin signature + embedded tag | ● | ● | ● | ◐ | ● | ● | Wind blades, large composites |
 

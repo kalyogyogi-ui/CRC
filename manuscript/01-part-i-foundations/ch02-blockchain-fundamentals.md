@@ -2,20 +2,20 @@
 
 ## What This Chapter Covers
 
-This chapter supplies exactly the distributed-ledger background the rest of the book
+This chapter supplies the distributed-ledger background the rest of the book
 requires, and no more. Readers who work with blockchain systems professionally can
-skim Section 2.6 (which fixes the book's terminology) and move to Chapter 3. Readers
-who want a systematic treatment of the field should consult the references at the end
-of the chapter; I have written one such treatment myself, and this chapter deliberately
-does not reproduce it. What follows is organized around a single question: *what does
-this machinery actually guarantee, and at what cost?* — because every architectural
-decision in Part II is a negotiation between those guarantees and those costs. The
-chapter proceeds from data structures (why rewriting is detectable) through
-consensus (who appends, and why the others accept it), the permissioning
-decisions, and smart contracts, to a terminology section that fixes the book's
-vocabulary and a closing checklist of what the machinery pointedly does not
-provide; a worked end-to-end trace in Section 2.8 assembles the pieces into one
-narrative before Part II formalizes them.
+skim Section 2.6 (terminology) and move to Chapter 3. Readers wanting a systematic
+field treatment should consult the author's prior blockchain fundamentals monograph
+(cited at chapter end); this chapter does not reproduce it. The organizing question
+is: *what does this machinery guarantee, and at what cost?* — because every
+architectural decision in Part II negotiates between those guarantees and those
+costs. The chapter proceeds from data structures (why rewriting is detectable)
+through consensus (who appends, and why the others accept it), permissioning
+decisions, and smart contracts, to a terminology section and a closing checklist
+of what the machinery pointedly does not provide. Section 2.8 assembles the pieces
+into one end-to-end trace before Part II formalizes them. Readers without a
+cryptography background should not skip Section 2.2: the hash-and-Merkle argument
+is the mechanism every later integrity claim rests on.
 
 ## 2.1 The Problem a Ledger Solves
 
@@ -765,6 +765,6 @@ first and hardest of the missing pieces, binding records to matter, is next.
    (EuroSys '18)*. ACM, 2018.
 6. Narayanan, A., J. Bonneau, E. Felten, A. Miller, and S. Goldfeder. *Bitcoin and
    Cryptocurrency Technologies.* Princeton, NJ: Princeton University Press, 2016.
-7. [AUTHOR'S PRIOR BLOCKCHAIN FUNDAMENTALS TITLE — CITATION TO BE SUPPLIED.]
+7. [AUTHOR LAST NAME], [FIRST NAME]. *[TITLE — AUTHOR'S PRIOR BLOCKCHAIN FUNDAMENTALS MONOGRAPH]*. [Publisher — TO BE SUPPLIED], [year — TO BE SUPPLIED]. Cited in Chapter 1, Section 1.6; not duplicated here.
 
 \newpage

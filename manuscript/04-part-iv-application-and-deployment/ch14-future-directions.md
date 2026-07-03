@@ -769,7 +769,7 @@ disciplines that fits your temperament; the field's shortage is you.
 
 This book opened with an engineer unable to answer a simple question — *is this
 the module the paperwork describes?* — and has spent fourteen chapters, two
-appendices, and one pilot plant's worth of measured evidence building
+appendices, and the composite design walkthrough of Chapter 11 building
 the machinery for a better answer: identity anchored in the physics
 manufacturing cannot control, records ordered and frozen by consensus among
 parties who distrust one another, verification decomposed into steps whose
@@ -805,6 +805,23 @@ better answer than trust. The work assembled here is offered as a start on one,
 and the problems of this chapter are offered to the readers who will finish it —
 with the author's single request, earned by four hundred pages of
 falsification criteria: when you build it better, publish what broke.
+
+## 14.10 Chapter Summary
+
+This closing chapter mapped the research agenda onto the architecture stack
+(Figure 14.1), organized open problems by measurement (M-series), cryptography
+(C-series), and standardization (S-series), and tied each to the decade's
+regulatory windows — battery and product passports, passport consultations for
+PV, and cross-sector DPP infrastructure. It argued for artifact openness as field
+policy, named the dual-use risks of asset legibility and their countermeasures in
+earlier chapters, and closed with a role-specific "Monday list" of actions
+requiring no one's permission. The book's unfinished state is structural, not
+accidental: engineering chapters are implementable now; measurement and
+institutional chapters depend on cohort data and governance contact this decade
+will supply. The field's founding moment — regulation demanding per-unit truth,
+markets pricing opacity, instruments closing the measurement gap — is the
+external force that makes the agenda urgent whether or not this manuscript's
+specific mechanisms prevail.
 
 ## References and Further Reading
 

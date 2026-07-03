@@ -701,7 +701,7 @@ selectively suppressed ahead of a transaction (a diligence flag). The monitor
 cannot distinguish the three — but it does not need to; its job is to convert
 *invisible absence* into *visible anomaly*, cheaply and fleet-wide, so that
 the expensive instruments (audits, V2 sampling, contractual inquiry) point
-somewhere. In the pilot's first year this exact pattern surfaced the
+somewhere. In the Chapter 11 walkthrough's first year this exact pattern surfaced the
 S3 unlogged-replacement finding (Section 11.3) — not by detecting the
 replacement, which was invisible, but by detecting that a work order's
 duration was inconsistent with its recorded scope. Absence-of-evidence

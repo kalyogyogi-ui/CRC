@@ -1,17 +1,17 @@
-# Quantum Defect Mapping and Integrity Verification
+# Structural Defect Mapping and Integrity Verification
 
 ## What This Chapter Covers
 
 This is the book's anchor chapter, and the one that draws most directly on my own
 research. It develops the passive-binding branch of Chapter 3 to its strongest form:
-using quantum sensing to map the defect structure of photovoltaic devices, binding
-those maps to the ledger identity record at enrollment, and building on that binding
-a verification workflow through which a downstream party — an insurer, a buyer, a
-grid operator, a warranty adjudicator — can trust a panel's recorded condition
-history without trusting its custodian. Everything Part II has built converges
-here: the enrollment moment of Chapter 4 gets its measurement, the
-`EVT_REGISTER` and `EVT_INSPECT` events of Chapter 5 get their payloads, and
-the four identity properties of Chapter 1 finally get their physical root. Portions of the mechanism described in
+mapping the defect structure of photovoltaic devices, binding those maps to the
+ledger identity record at enrollment, and building on that binding a verification
+workflow through which a downstream party — an insurer, a buyer, a grid operator, a
+warranty adjudicator — can trust a panel's recorded condition history without
+trusting its custodian. Everything Part II has built converges here: the enrollment
+moment of Chapter 4 gets its measurement, the `EVT_REGISTER` and `EVT_INSPECT`
+events of Chapter 5 get their payloads, and the four identity properties of
+Chapter 1 finally get their physical root. Portions of the mechanism described in
 Sections 6.4–6.6 are the subject of my pending patent application; as promised in the
 Preface, the ideas are explained fully, and readers evaluating alternative
 integrity-verification mechanisms will find the workflow of Section 6.6 transfers to
@@ -19,18 +19,58 @@ any binding modality that satisfies the requirements of Section 6.5. Section 6.9
 states the intellectual-property posture plainly so that no reader has to
 infer it from omissions.
 
-A note on posture. Quantum sensing attracts more enthusiasm than scrutiny, and a
-chapter like this one earns trust by being exact about limits. I have tried to state
-throughput, cost, and maturity honestly at each step, and Section 6.8 collects the
-open problems rather than burying them. The chapter runs from the physical
-argument (why defect structure is the right anchor, and why simpler marks are
-not), through the sensing toolbox with its maturity stated plainly, the
-enrollment pipeline and its two-layer decomposition, the three-element
-binding construction, the generalized requirements for readers bringing
-other modalities, the four-step verification workflow with its sampling
-arithmetic, and the tier economics — closing with the open problems and, in
-Section 6.9, a plain statement of the intellectual-property posture so that
-readers can weigh the argument knowing its author's stake.
+Section 6.0 fixes terminology before the physics: this chapter is about
+*structural defect mapping*, not a survey of quantum technologies. Section 6.8
+collects the open problems rather than burying them. The chapter runs from the
+physical argument (why defect structure is the right anchor, and why simpler marks
+are not), through the sensing toolbox with maturity stated plainly, the enrollment
+pipeline and its two-layer decomposition, the three-element binding construction,
+the generalized requirements for readers bringing other modalities, the four-step
+verification workflow with its sampling arithmetic, and the tier economics —
+closing with the open problems and, in Section 6.9, a plain statement of the
+intellectual-property posture so that readers can weigh the argument knowing their
+author's stake.
+
+## 6.0 Terminology: Structural Mapping, Quantum Modalities, and Classical Characterization
+
+Measurement scientists and energy engineers use overlapping vocabulary for
+different instrument classes. This book uses the terms below consistently; a
+reviewer from either community should find no hidden category error.
+
+**Structural defect mapping** is the chapter's subject: recovering a per-unit
+fingerprint of the microscopic and mesoscopic defect population — grain
+boundaries, shunt paths, solder-bond resistance outliers, crack precursors — that
+manufacturing does not control and that evolves as the module degrades. The map is
+the identity anchor; the instruments are means to read it.
+
+**Quantum-limited sensing modalities** are those whose readout exploits quantum
+states of a probe — spin ensembles, superconducting loops — to reach field or
+current sensitivity below what classical magnetometers achieve at comparable
+spatial resolution. In this architecture, **nitrogen-vacancy (NV) magnetometry**
+and laboratory **scanning SQUID** systems fall in this class. They are the
+high-assurance enrollment and escalation tools of Table 6.1's upper tiers.
+
+**Established semiconductor characterization** covers modalities the PV industry
+already deploys at factory and field scale: **electroluminescence (EL) imaging**,
+**lock-in thermography**, **infrared thermography**, and **I–V characterization**.
+These are not "quantum sensing" in the physics sense. They are mature, classical
+measurements of recombination, dissipation, and integral electrical behavior. In
+this architecture they provide corroboration, routine tiers, and fleet screening —
+not because they are inferior science, but because their economics and deployment
+maturity match high-volume manufacture.
+
+**Composite enrollment** combines both classes: factory EL plus flash data at Tier 0
+(cheap, universal), magnetometric defect maps at Tier 2 (higher cost, higher
+bindability), with cross-modal locking so neither modality alone carries the
+security argument. The patent-pending contribution described in Sections 6.4–6.6
+concerns the *binding construction and verification workflow* across these
+modalities, not the claim that every measurement in the stack is quantum
+physics.
+
+Readers arriving from quantum-metrology laboratories should expect EL and
+thermography to carry most of the transaction volume. Readers arriving from PV
+quality assurance should expect NV magnetometry to appear where bindability, not
+throughput, is the binding constraint. Both are correct.
 
 ## 6.1 Why Defects, of All Things
 
@@ -115,11 +155,13 @@ underwriting input (Chapter 13 returns to this).
 
 ## 6.2 The Sensing Toolbox
 
-Several quantum sensing modalities can characterize current flow and material
-structure in photovoltaic devices. This section states what each measures and where
-it fits; the physics is developed only to the depth the system architecture needs.
+Table 6.1 organizes the modalities by role. This section states what each
+measures and where it fits; the physics is developed only to the depth the system
+architecture needs. Quantum-limited instruments appear first; classical
+characterization modalities follow in Section 6.2's closing paragraphs and in
+Table 6.1's lower rows.
 
-**Nitrogen-vacancy (NV) magnetometry.** The workhorse, and worth a careful
+**Nitrogen-vacancy (NV) magnetometry.** The quantum-limited workhorse, and worth a careful
 paragraph of physics because the architecture's claims rest on what it can and
 cannot measure. An NV center is a point defect in diamond — a substitutional
 nitrogen atom adjacent to a lattice vacancy — whose ground state is a spin
@@ -182,11 +224,13 @@ is disqualifying; all of them cost minutes per unit, which is exactly why the
 sampling arithmetic of Section 6.6.1, rather than instrument physics, is
 what makes field verification affordable.
 
-**Complementary classical modalities.** The system design that follows never uses
-quantum sensing alone. EL imaging (fast, mature, optical-depth-limited), IR
+**Complementary classical modalities.** The system design that follows never relies
+on a single instrument class. EL imaging (fast, mature, optical-depth-limited), IR
 thermography (coarse, field-deployable), and I–V characterization (integral, not
-spatial) each corroborate the magnetometric map per Section 4.5's Rule 2. Table 6.1
-positions the modalities.
+spatial) each corroborate the magnetometric map per Section 4.5's Rule 2. These
+are established semiconductor-characterization tools, not quantum probes; they
+carry the routine tiers because their marginal cost and line speed are solved
+problems. Table 6.1 positions all modalities together.
 
 **Table 6.1** Measurement modalities for module structural characterization, as used
 in this chapter's architecture. Speeds and maturities are stated for 2026 and
@@ -751,9 +795,9 @@ measurement into a binding. On that binding stands the four-step verification
 workflow: authenticate the record against public anchors, police the evidence graph,
 verify matter against template on a pre-committed random sample, and decide with
 residual risk that is quantified rather than vague. Assurance is bought in tiers, so
-the mature EL layer carries routine load while the quantum layer prices into the
+the mature EL layer carries routine load while the quantum-limited layer prices into the
 transactions that need it — with Tier 0 alone closing most of Chapter 1's
-fraud economics before a single quantum instrument ships. The chapter's
+fraud economics before a single NV instrument ships. The chapter's
 honest edges are marked: stability data that must be earned in calendar
 years (M1), an adversarial inversion question posed here before adversaries
 pose it (M2), throughput engineering awaiting an industrial customer (M3),
@@ -790,6 +834,6 @@ fleets worth attacking.
 9. International Electrotechnical Commission. *IEC 61215 series* (design
    qualification test sequences — the accelerated-aging protocols behind the
    M1 stability evidence). Geneva: IEC.
-10. [AUTHOR'S PATENT APPLICATION — NUMBER, TITLE, FILING DATE TO BE SUPPLIED.]
+10. [AUTHOR LAST NAME], [FIRST NAME]. *[PATENT APPLICATION TITLE — TO BE SUPPLIED]*. Application No. [NUMBER — TO BE SUPPLIED], filed [DATE — TO BE SUPPLIED]. Covers binding and verification workflow in Sections 6.4–6.6.
 
 \newpage

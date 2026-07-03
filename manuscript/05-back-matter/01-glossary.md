@@ -107,14 +107,24 @@ events. (§4.2)
 successor algorithm before the incumbent weakens, transferring evidential weight
 from signatures to anchored structure. (§9.4)
 
+**Quantum-limited sensing.** Instrument class whose readout exploits quantum states
+(spin ensembles, superconducting loops) to reach sensitivity below comparable
+classical probes at a given spatial resolution. Distinguished in this book from
+established semiconductor characterization (EL, thermography, I–V). (§6.0)
+
 **Registrar.** The accredited role authorized to create asset identities;
 plural by design, with revocable, ledger-recorded accreditation. (§4.3)
 
 **Retroactive registration.** Enrollment of an already-fielded asset, carrying
 explicitly weaker provenance than factory registration. (§4.3)
 
-**Stable-structure layer.** The component of a defect map fixed at manufacture
+**Stable-structure layer.** The component of a structural defect map fixed at manufacture
 (grain texture, as-built shunt population) on which identity rests. (§6.3)
+
+**Structural defect mapping.** Recovery of a per-unit fingerprint of microscopic and
+mesoscopic defect structure in a photovoltaic device, bound to a ledger identity
+record at enrollment. Combines quantum-limited modalities (e.g., NV magnetometry)
+and classical characterization (e.g., EL imaging) per Chapter 6, Section 6.0. (Ch. 6)
 
 **Supersession.** Replacement-with-provenance of a binding template or role key,
 never deletion; the chain of superseded templates is itself evidence. (§6.4,
@@ -128,7 +138,7 @@ custody. (§10.2)
 risk: universal cheap enrollment, opportunistic re-verification, sampled
 high-assurance escalation, laboratory reference. (§3.6, §6.7)
 
-**Two-layer decomposition.** Separation of a measured defect map into
+**Two-layer decomposition.** Separation of a measured structural defect map into
 stable-structure and condition layers, making one measurement serve identity and
 condition simultaneously. (§6.3)
 

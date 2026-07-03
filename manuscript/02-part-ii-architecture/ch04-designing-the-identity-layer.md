@@ -278,7 +278,7 @@ fingerprint enrollment):
    fingerprint is final and the latest at which the factory's process custody
    is unbroken.
 2. **Enrollment measurement.** In-line instrumentation (factory EL at minimum;
-   quantum defect mapping per Chapter 6 where deployed) captures the structural
+   structural defect mapping per Chapter 6 where deployed) captures the structural
    fingerprint *as part of the existing QA flow* — the measurement most factories
    already perform becomes the enrollment measurement, which is what makes the
    economics close.

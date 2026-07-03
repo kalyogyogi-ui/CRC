@@ -110,6 +110,21 @@ chapter treats it.
 | Passport & supply-chain compliance | Importers, manufacturers | Manual evidence assembly; detention risk | §13.5 |
 | Certificate markets | Honest generators; certificate buyers | Fraud discount on instruments | §13.5 |
 
+> **Assumptions and sensitivity (Table 13.1).**  
+> **Rent magnitudes** in the "Rent's form" column are *author's judgment* unless
+> a section cites a published source. The 30–60% used-module provenance spread
+> (§13.2) tracks broker listings and repowering-market reports through the
+> mid-2020s; **sensitivity:** if the spread is 15% (thin markets) rather than
+> 45% (mid-range), verifiable-history value is bounded by the lower spread but
+> the mechanism unchanged. **USD 15–30/module** flash-test alternative cost
+> (§13.1 method) assumes campaign-scale field labor in OECD markets;
+> **sensitivity:** at USD 8/module (factory-adjacent retest), verified-history
+> value falls proportionally but remains positive where identity binding is
+> required. **Passport compliance rows** assume EU Battery Regulation timelines;
+> **sensitivity:** delayed enforcement shifts incidence later without changing
+> the rent's structure. Disagreements should locate in these fractions, not in
+> the lemons-mechanism claim.
+
 ## 13.2 Secondary Equipment Markets
 
 The first market gets the longest treatment because it is where the
@@ -531,6 +546,20 @@ this table read carelessly.
 | Insurer | Verification client (small, now) | Loss variance, diligence cost, claim cost (immediate) | **First mover** — and the pilot's actual first signature |
 | Recycler | Accreditation, mass-balance events | Regulated-market access (immediate under passports); verified feedstock provenance | Positive where regulated |
 | Secondary buyer | Verification cost (per deal) | Full lemons-rent reallocation | Positive per transaction |
+
+> **Assumptions and sensitivity (Table 13.2).**  
+> **Early-negative OEM/owner rows** assume enrollment at manufacture and
+> consortium fees from year zero; **sensitivity:** if enrollment is mandated by
+> regulation (passport), OEM cost becomes compliance-shaped and owner early
+> negative shrinks. **Insurer "first mover"** row is supported by the Chapter 11
+> walkthrough's recruitment sequence (archetype actual, citation pending);
+> **sensitivity:** without insurer pricing levers, adoption delays 2–4 years per
+> Section 13.6.1 sequencing. **O&M ambivalence** is structural; **sensitivity:**
+> shared-savings SLAs (pilot S3 pattern) flip the row from negative to neutral
+> within one contract cycle; without them, O&M remains a deployment risk.
+> **Retrofit gate** (Section 4.3): USD 3.10/module campaign cost from Chapter 11
+> walkthrough; **sensitivity:** at USD 10/module, churn-driven enrollment
+> dominates over campaigns but destination unchanged.
 
 Two rows repay the closer look. The *OEM's* early-negative position
 conceals a bifurcation: for commodity manufacturers the enrollment cost

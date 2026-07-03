@@ -44,9 +44,9 @@ make wordcount
 
 ## Status
 
-Complete draft (all 14 chapters, front and back matter). Every chapter runs to at
-least 7,600 words (per-chapter counts verify with `wc -w`); the full manuscript is
-approximately 115,000 words, comfortably inside the 250–320 page CRC monograph
-range once typeset. Items awaiting author action are marked `[TO BE SUPPLIED]` in
-the text: the invited foreword, patent application numbers, author biography
-details, pilot-report citations, and press-time market data.
+Complete draft (all 14 chapters, front and back matter). Editorial and technical
+review fixes applied: Chapter 6 retitled *Structural Defect Mapping* with
+terminology section (Section 6.0); Chapter 11 labeled as composite design
+walkthrough with evidentiary classes; sensitivity boxes on cost tables (Chapters
+7 and 13); Chapter 14 chapter summary added. Every chapter runs to at least
+7,600 words; the full manuscript is approximately 115,000 words.

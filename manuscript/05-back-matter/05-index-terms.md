@@ -32,8 +32,8 @@ are chapter/section references for the indexer's orientation.*
 **counterfeiting** — 1.4.1; as identity attack, 1.4.1, 8.3
 **custody vs. ownership** — 5.2
 **decentralized identifiers (DIDs)** — 3.5; succession, 3.5, 14.2
-**defect map** — *see* quantum defect mapping
-**degradation** — rates, 1.4.3; envelope monitoring, 5.5, 11.3
+**defect map** — *see* structural defect mapping
+**structural defect mapping** — 6.0–6.10; patent-pending binding, 6.4–6.6, 6.9; pilot walkthrough, 11
 **digital product passport** — 10.4, 12.2, 14.4; verifiability gap, 12.2, B.3
 **digital twin** — versus evidential record, 3.2
 **dispute events** — 5.3; adjudication rehearsal, 11.3

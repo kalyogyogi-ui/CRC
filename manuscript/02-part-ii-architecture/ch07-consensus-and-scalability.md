@@ -569,6 +569,21 @@ Tier 0–1 condition policy of Section 6.7 with 2% annual EL sampling plus
 event-driven escalations; consortium of 16 validators; anchoring 4×/day to two
 public chains.
 
+> **Assumptions and sensitivity (Table 7.4).**  
+> **Fixed inputs:** 638,300 registered units; 25-year life; envelope ~0.9 kB;
+> batch size 2,048; Tier 0–1 condition policy (2% annual EL sampling plus
+> event-driven escalations); 16 validators; anchoring 4×/day to two public chains;
+> anchoring priced at USD 2/tx (conservative); custody at commodity object-storage
+> rates with 3× replication and 15% annual price decline truncated at year 10.  
+> **Sensitivity (± effect on conclusion):** doubling all event frequencies →
+> consensus state ~12 MB (still negligible); post-quantum envelope inflation
+> (Section 9.3) → ~50 MB (still negligible); doubling anchor cadence → ~2×
+> anchoring cost (dominant line item); halving replication factor → ~⅓ custody
+> cost; aggressive Tier-2 sampling → measurement budget rises, ledger budget
+> unchanged. **Conclusion stability:** totals remain dominated by custody and
+> anchoring under all listed perturbations; ledger capacity is not the binding
+> constraint.
+
 **Table 7.4** Lifetime ledger load and cost model, 250 MW plant. Costs in 2026 USD;
 public-chain anchoring priced conservatively at USD 2 per anchor transaction
 averaged across fee regimes.
@@ -603,16 +618,10 @@ cold-export media refresh. Validator share allocates one-sixteenth of a
 volume. Nothing in the table depends on any component's vendor pricing;
 every line is commodity.
 
-Sensitivity, briefly, because a model whose conclusion flips under
-perturbation is a rhetorical device, and this one is not: double every event frequency and consensus state reaches
-twelve megabytes; assume post-quantum envelope inflation (Section 9.3's
-2–4 kB signatures, hybrid-doubled) and it reaches perhaps fifty — still
-nothing. The cost total is dominated by custody and anchoring, both linear
-in policy choices (replication factor, anchor cadence) that governance can
-tune by an order of magnitude in either direction. The only variable that
-moves the picture qualitatively is Tier-2 instrument time under an
-aggressive condition-sampling policy — which is a *measurement* budget, not
-a ledger budget, and it buys underwriting value priced in Chapter 13.
+Sensitivity to the assumptions in the box above: doubling every event frequency
+still leaves consensus state in the low megabytes; post-quantum envelope inflation
+(Section 9.3) does not change the conclusion. Cost totals remain dominated by
+custody and anchoring — both governance dials — not consensus compute.
 
 Totals worth stating in prose because they are the chapter's conclusion: the
 plant's entire 25-year evidential life fits in **under six megabytes of consensus

@@ -40,8 +40,9 @@ the physical structure of a device, so that the identity record is anchored not 
 a key in a chip but to measurable properties of the object itself.
 
 That last piece is where this book departs from the existing literature. A portion of
-the approach described in Chapters 6 and 11 — the binding of quantum-sensing-derived
-defect maps to an immutable identity record, and the verification workflow built on
+the approach described in Chapters 6 and 11 — the binding of structural
+defect-mapping data derived from quantum-limited and classical characterization
+modalities to an immutable identity record, and the verification workflow built on
 that binding — is the subject of a patent application I filed before beginning this
 manuscript. I want to be straightforward about what that means for the reader. The
 book explains the ideas fully; a monograph that withheld its central mechanism would

@@ -64,7 +64,7 @@
 | 10.2 | The governance decision table |
 | 10.3 | Regulatory interface summary across the three focus jurisdictions |
 | 11.1 | Pilot contract suite |
-| 11.2 | Pilot key results, year one |
+| 11.2 | Illustrative year-one results for the composite walkthrough (evidentiary class per row) |
 | 12.1 | The framework mapped across asset classes |
 | 12.2 | Interoperability layers and their current state |
 | 12.3 | Battery-passport field groups and their sources in the event schema |

@@ -650,8 +650,8 @@ analysis, the regulatory interfaces, and the economics.
 
 **Assumptions about the reader.** Graduate-level engineering background or equivalent
 practice. No blockchain background is assumed (Chapter 2 supplies what is needed).
-No quantum-sensing background is assumed (Chapter 6 develops it from the application
-side). Familiarity with photovoltaic system engineering helps but is not required;
+No specialized measurement background is assumed (Chapter 6 develops structural
+defect mapping and its instrument classes from the application side). Familiarity with photovoltaic system engineering helps but is not required;
 domain terms are defined at first use and collected in the Glossary.
 
 **Non-goals.** The book does not treat energy trading, tokenized electricity, or
@@ -726,10 +726,10 @@ verifiable credentials, hardware roots of trust) to physical infrastructure.
 
 **Part II (Chapters 4–7)** is the architectural core: the design of the identity layer
 including on-chain/off-chain partitioning and oracle design (Chapter 4); the formal
-lifecycle event schema from manufacture to decommissioning (Chapter 5); quantum defect
-mapping and the integrity-verification workflow built on it (Chapter 6, the anchor
-chapter); and consensus and scalability analysis for fleets of thousands to millions
-of devices (Chapter 7).
+lifecycle event schema from manufacture to decommissioning (Chapter 5); structural
+defect mapping and the integrity-verification workflow built on it (Chapter 6, the
+anchor chapter); and consensus and scalability analysis for fleets of thousands to
+millions of devices (Chapter 7).
 
 **Part III (Chapters 8–10)** analyzes what can go wrong and what surrounds the system:
 the threat model of spoofing, cloning, and oracle manipulation (Chapter 8);
@@ -752,7 +752,8 @@ Chapter 1, Section 2.1, then Chapters 10, 13, and 14, treating Part II as a
 reference volume — this path was checked against readers without engineering
 backgrounds and survives, though Section 6.6's verification workflow repays the
 detour for anyone who will consume verification results professionally. The
-*measurement scientist's path* — readers arriving from the quantum-sensing side —
+*measurement scientist's path* — readers arriving from PV characterization or
+quantum-metrology laboratories —
 runs Chapters 1, 3, 6, 8, and 14, and such readers are specifically asked to read
 Section 6.8 and the M-series problems of Chapter 14, because the field needs
 their instruments more than it needs additional architecture papers. Finally, the
@@ -795,6 +796,8 @@ analysis, and deployment detail.
    passport). *Official Journal of the European Union*, 2023.
 7. U.S. Federal Aviation Administration. Advisory Circular AC 00-56B, *Voluntary
    Industry Distributor Accreditation Program* (parts traceability context).
-8. [AUTHOR'S PRIOR WORK AND PATENT APPLICATION — CITATION TO BE SUPPLIED.]
+8. [AUTHOR LAST NAME], [FIRST NAME]. *[PATENT APPLICATION TITLE — TO BE SUPPLIED]*.
+   Application No. [NUMBER — TO BE SUPPLIED], filed [DATE — TO BE SUPPLIED]. Underlies
+   Chapter 6; disclosed in Preface.
 
 \newpage

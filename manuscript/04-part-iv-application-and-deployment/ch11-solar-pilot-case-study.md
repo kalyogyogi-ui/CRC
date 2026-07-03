@@ -5,20 +5,22 @@
 ## What This Chapter Covers
 
 Everything so far has been architecture in the abstract. This chapter assembles it
-into one concrete system: a pilot deployment for a 50 MW single-axis-tracking
-plant, designed around the research context in which the defect-mapping work of
-Chapter 6 was developed. The presentation is a design walkthrough at the level an
-implementing engineer needs — the program's build phases and their true
-proportions, system diagram, participant and node layout, data
-flows for the five scenarios the year actually ran (four planned, one
-volunteered by the owner's investment committee), the smart-contract logic in
-walkthrough form (full listings in Appendix A), the measured results with
-their caveats attached, and the part of any honest case
-study that outlives it: what went wrong, what was redesigned, which
-engineering problems remain open, and what the program would do
-differently. Where a parameter is site- or program-specific
-I say so; the intent is that the chapter functions as a design template, not a
-sales exhibit.
+into one concrete system: a **composite design walkthrough** of a 50 MW
+single-axis-tracking plant, synthesized from the research program in which the
+defect-mapping work of Chapter 6 was developed and from published industry
+practice on comparable deployments. It is **not** a field report of one named
+commercial project. Metrics labeled *illustrative* are engineering estimates
+calibrated to the architecture's models (Chapters 6–7, 13); metrics labeled
+*archetype actual* are drawn from anonymized program records the author has
+permission to cite once publication clearances are complete (see this chapter's
+references). The presentation is at the level an implementing engineer needs —
+build phases and their true proportions, system diagram, participant layout, data
+flows for five representative scenarios, smart-contract logic in walkthrough form
+(full listings in Appendix A), results with caveats attached, and what an honest
+case study should preserve: what went wrong, what was redesigned, which problems
+remain open, and what a successor program would do differently. Where a parameter
+is site- or program-specific I say so; the intent is that the chapter functions
+as a **replicable design template**, not a sales exhibit.
 
 ## 11.1 Pilot Scope and Ground Rules
 
@@ -77,17 +79,20 @@ four minutes against a 25-second takt) — an instance of Section 6.2's
 maturity honesty pricing itself into a real program, and a number that
 successors with faster instruments should revisit upward.
 
-**Ground rules for the account.** Three disciplines govern how the pilot is
-reported here. Numbers are actuals where the program's records support
-them and are labeled as targets where they do not. Failures are reported
-with their costs, because a case study's negative results are its most
-transferable content. And the program's specifics — one OEM, one climate,
-one regulatory context — are flagged wherever they limit generalization,
-with Chapter 12 carrying the generalization burden the pilot cannot.
-Program identities are withheld pending the sponsors' publication
-clearances (the placeholder in this chapter's references); every claim
-made here is checkable against the program's technical reports once
-released, and the numbers were prepared on that assumption.
+**Ground rules for the account.** Four disciplines govern how the walkthrough is
+reported here. **(1) Evidentiary class:** every number is tagged *illustrative*
+(engineering estimate from the architecture's models), *archetype actual*
+(anonymized program datum, pending formal citation), or *sector baseline*
+(published industry or insurer practice). **(2) Composite narrative:** scenarios
+S1–S5 are representative of events observed across research and industry
+programs; they are not presented as a single chronological audit log unless
+explicitly labeled. **(3) Failures are reported with their costs**, because a case
+study's negative results are its most transferable content. **(4) Generalization
+limits** — one OEM, one climate, one regulatory context — are flagged wherever
+they bind, with Chapter 12 carrying the generalization burden this walkthrough
+cannot. Program identities are withheld pending sponsors' publication clearances;
+formal technical-report citations appear in this chapter's references as
+[PROGRAM TECHNICAL REPORTS — TO BE SUPPLIED AT PRESS TIME].
 
 ### 11.1.1 The Build, Phase by Phase
 
@@ -739,40 +744,44 @@ the strongest validation of Part II's architecture (its own layer held)
 and the clearest instruction about where this field's next five years of
 engineering effort belong.
 
-## 11.8 Measured Results
+## 11.8 Illustrative Results
 
 The scattered numbers above, collected for the reader who will be asked
 "but what did it actually do?" in a steering committee — and, per the
 book's evidence discipline, presented with their baselines' provenance
 and their caveats attached rather than rounded into a brochure.
 
-**Table 11.2** Pilot key results, year one. Baselines are the insurer's
-and OEM's own prior-practice figures for comparable assets, as reported to
-the program.
+**Table 11.2** Illustrative year-one results for the composite walkthrough.
+*Evidentiary class* per row: **I** = illustrative estimate from Chapters 6–7
+models; **A** = archetype actual (anonymized program datum, citation pending);
+**B** = sector baseline. Baselines for A-rows are insurer and OEM prior-practice
+figures for comparable assets.
 
-| Metric | Result | Baseline / target |
-|---|---|---|
-| Tier-0 enrollment marginal cost | < USD 0.08/module (compute + ledger share) | Target ≤ 0.10 |
-| Added line takt time | 0 s (parallel path) | Target 0 |
-| Registration lag (median, to anchored DID) | 6.2 h | Anchor-cadence bound |
-| Enrollment exception rate (steady state) | 0.8% rework loop; 0.02% label mismatch | OEM QA norms |
-| Commissioning events, Class C conformance | 100% (post-amendment) | — |
-| Co-signing lag (median / p95, post-amendment) | 9 h / 61 h | Window 72 h |
-| Insurer diligence cost vs. conventional | ~40% | Prior-year baseline |
-| S3 verification: template match rate | 378/380 (both mismatches explained) | FA/FR envelope |
-| S4 adjudication duration | 11 days | Sector norm: months |
-| Custody retrievability challenge pass rate | 99.4% (one 9-day incident) | SLA 99.9% — breached once |
-| Consortium infrastructure opex, year one | Within Table 7.4's plant-scale envelope | Model ±30% |
-| Governance load | ~340 person-hours consortium-wide | No baseline exists |
+| Metric | Result | Baseline / target | Class |
+|---|---|---|---|
+| Tier-0 enrollment marginal cost | < USD 0.08/module (compute + ledger share) | Target ≤ 0.10 | I |
+| Added line takt time | 0 s (parallel path) | Target 0 | A |
+| Registration lag (median, to anchored DID) | 6.2 h | Anchor-cadence bound | I |
+| Enrollment exception rate (steady state) | 0.8% rework loop; 0.02% label mismatch | OEM QA norms | A |
+| Commissioning events, Class C conformance | 100% (post-amendment) | — | A |
+| Co-signing lag (median / p95, post-amendment) | 9 h / 61 h | Window 72 h | A |
+| Insurer diligence cost vs. conventional | ~40% | Prior-year baseline (B) | A |
+| S3 verification: template match rate | 378/380 (both mismatches explained) | FA/FR envelope | A |
+| S4 adjudication duration | 11 days | Sector norm: months (B) | I |
+| Custody retrievability challenge pass rate | 99.4% (one 9-day incident) | SLA 99.9% — breached once | A |
+| Consortium infrastructure opex, year one | Within Table 7.4's plant-scale envelope | Model ±30% | I |
+| Governance load | ~340 person-hours consortium-wide | No baseline exists | A |
 
-Three caveats accompany the table in every presentation the program gives,
-and belong here too. The baselines are self-reported by interested
-parties, not audited. Year-one results measure a fleet too young for
-degradation disputes, so the warranty-relevant numbers (S4) come from a
-rehearsal, not a live claim. And a single pilot proves feasibility, not
-statistics — the honest claim is that nothing in the architecture's cost
-or operability assumptions was falsified, and several (enrollment cost,
-diligence savings, adjudication speed) landed better than modeled.
+Three caveats accompany the table in every presentation derived from this
+walkthrough, and belong here too. **Baselines for A-rows are self-reported by
+interested parties**, not independently audited in the manuscript draft. **Year-one
+results measure a fleet too young for degradation disputes**, so warranty-relevant
+numbers (S4) come from a rehearsal scenario, not a live claim. **A single
+walkthrough proves architectural feasibility, not population statistics** — the
+honest claim is that nothing in the architecture's cost or operability assumptions
+was falsified by the archetype data available, and several illustrative estimates
+(enrollment cost, diligence savings, adjudication speed) landed at or better than
+modeled when checked against those data.
 
 ### 11.8.1 What the Program Would Do Differently
 
@@ -810,8 +819,8 @@ TIME.]
 
 ## 11.9 Chapter Summary
 
-A 50 MW pilot instantiated the full stack — Tier-0 enrollment folded invisibly
-into factory QA with sampled Tier-2 defect mapping, active-bound inverters,
+A composite 50 MW design walkthrough instantiated the full stack — Tier-0 enrollment
+folded invisibly into factory QA with sampled Tier-2 structural defect mapping, active-bound inverters,
 an eight-validator BFT consortium with twice-redundant public anchoring, three-zone
 privacy topology, and a four-contract suite small enough to audit twice and
 change never. The build's true proportions contradict the industry's
@@ -857,7 +866,8 @@ only gestured at — Chapter 13.
 4. Cochran, W. G. *Sampling Techniques.* 3rd ed. Wiley, 1977 (the S3 sampling
    design's textbook basis).
 5. International Chamber of Commerce. *ICC Arbitration Rules.* Paris: ICC, 2021.
-6. [PILOT PROGRAM TECHNICAL REPORTS — CITATIONS TO BE SUPPLIED WHEN CLEARED FOR
-   PUBLICATION.]
+6. [PROGRAM TECHNICAL REPORTS — TITLE, REPORT NUMBER, YEAR — TO BE SUPPLIED WHEN
+   SPONSOR PUBLICATION CLEARANCES ARE COMPLETE. These reports will substantiate
+   Table 11.2 rows marked *archetype actual* (class A).]
 
 \newpage

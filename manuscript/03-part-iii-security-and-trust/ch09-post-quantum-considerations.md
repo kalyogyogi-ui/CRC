@@ -788,6 +788,6 @@ interface the system must survive, and the subject of Chapter 10.
 9. Huelsing, A., et al. *XMSS: eXtended Merkle Signature Scheme.* RFC 8391,
    IETF, 2018. The stateful hash-based family Section 9.3 declines for
    general roles, with its state-management burden documented.
-10. [AUTHOR'S POST-QUANTUM MIGRATION TITLE — CITATION TO BE SUPPLIED.]
+10. [AUTHOR LAST NAME], [FIRST NAME]. *[TITLE — AUTHOR'S POST-QUANTUM MIGRATION MONOGRAPH]*. [Publisher — TO BE SUPPLIED], [year — TO BE SUPPLIED]. General treatment cited in Chapter 1, Section 1.6; Chapter 9 is the asset-identity-specific application.
 
 \newpage

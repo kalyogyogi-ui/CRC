@@ -348,14 +348,15 @@ Candidate fingerprints for PV modules, roughly in order of current practicality:
   texture, in the spirit of "fingerprints of paper" work in physical cryptography;
   high entropy, but read points must be relocatable after decades of weathering,
   and outdoor soiling is unforgiving.
-- **Quantum-sensed defect maps.** Magnetometry with nitrogen-vacancy centers and
-  related quantum sensing modalities can map current-flow anomalies and material
-  defect distributions in cell structure at resolution and depth unavailable to
-  optical methods, capturing features intrinsic to the semiconductor bulk — the
-  hardest layer of the device for a forger to reproduce. This is the anchor of the
-  patent-pending approach this book develops; Chapter 6 treats it in full, including
-  the sober accounting of instrument cost and throughput that any honest proposal
-  owes.
+- **Structural defect maps.** Magnetometry with nitrogen-vacancy centers and
+  related quantum-limited modalities map current-flow anomalies and material
+  structure at resolution and depth unavailable to optical methods alone; classical
+  EL and thermography provide corroboration at factory and field scale (Chapter 6,
+  Section 6.0). The maps capture features intrinsic to the semiconductor bulk —
+  the hardest layer of the device for a forger to reproduce. This is the anchor of
+  the patent-pending approach this book develops; Chapter 6 treats it in full,
+  including the sober accounting of instrument cost and throughput that any honest
+  proposal owes.
 
 The four candidates deserve a closer physical look than the bullet summaries,
 because their strengths are set by *where in the device* their features live.
@@ -767,7 +768,7 @@ logic serves both. The module, passive and numerous, requires the object itself
 to serve as credential: enrollment and re-verification of structural
 fingerprints through the acquisition–registration–extraction–comparison
 pipeline, of which electroluminescence structure is the practical present,
-quantum-sensed defect mapping the high-assurance direction Chapter 6 develops,
+structural defect mapping the high-assurance direction Chapter 6 develops,
 and depth-versus-accessibility the organizing trade. DIDs and verifiable
 credentials supply workable naming and claim formats once their person-centric
 assumptions — self-sovereign control, key rotation, indefinite resolution — are
