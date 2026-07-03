@@ -43,7 +43,9 @@ the intended trade.
 ## 13.1 Ground Rules, and the One Economic Idea That Matters
 
 Nearly everything in this chapter is an application of one idea, so it is worth
-stating precisely. Akerlof's lemons analysis (cited since Chapter 1) shows that
+stating precisely — and worth crediting to its half-century of literature,
+because the novelty here is entirely in the application, never in the
+economics. Akerlof's lemons analysis (cited since Chapter 1) shows that
 when sellers know quality and buyers cannot verify it, prices converge toward the
 buyer's expectation of *average* quality, driving above-average goods out of the
 market. The equilibrium is inefficient in a specific, measurable way: the price
@@ -126,7 +128,9 @@ shredder that cannot — is being decided by infrastructure choices made
 now.
 
 The market's microstructure explains why the discount persists against
-apparent arbitrage. Used-module trade runs through brokers who buy at
+apparent arbitrage — the puzzle a naive reading of the spread invites is
+"why doesn't someone just buy the good lots?", and the answer is that
+nobody can tell which lots those are at a cost below the spread itself. Used-module trade runs through brokers who buy at
 distress prices and sell into price-sensitive export markets; their
 margin *is* the information spread, their inspection capacity is the
 market's only quality filter, and their incentive is to keep that filter
@@ -166,7 +170,8 @@ effect is more interesting than the price level: verified lots become
 *financeable and insurable* as a class, which pallet-lot lemons never were —
 markets do not merely reprice under information, they add contract types.
 
-A worked lot makes the arithmetic concrete. A repowering project offers
+A worked lot makes the arithmetic concrete, and it is the arithmetic
+every subsequent judgment in the section scales from. A repowering project offers
 10,000 documented modules, nine years fielded, 0.5%/yr recorded
 degradation, at a nominal new-equivalent value of USD 60 per unit. Under
 current practice the lot clears near USD 25–30 — the undocumented-market
@@ -227,6 +232,12 @@ be assembling that dataset now; Section 14.4's research agenda says so
 in the imperative.
 
 ## 13.3 Insurance and Warranty
+
+Insurance is the chapter's pivotal market — not its largest, but the one
+whose adoption decision transmits to all the others, per the loop of
+Section 13.6 — so it gets the mechanism treatment three times over:
+underwriting, claims, and the warranty contracts that are insurance by
+another name.
 
 **Underwriting.** The pilot's S3 scenario (Section 11.3) showed diligence cost
 dropping to ~40% of baseline; the systematic effect is on the *loss
@@ -329,6 +340,10 @@ ones — is standard insurance economics awaiting its application.
 
 ## 13.4 Project Finance and the Cost of Capital
 
+Finance's information problems are the quietest in the chapter — no fraud
+drama, no shredded modules — and its numbers are the largest, because
+they multiply small rates by enormous principals over long tenors.
+
 A solar project's debt prices against uncertainty in its production forecast and
 residual value. Equipment-related components of that uncertainty — infant
 mortality, degradation dispersion, counterfeit exposure, salvage value — enter
@@ -396,6 +411,10 @@ counsel — like S4's — will take the anchors before they take anyone's
 spreadsheet.
 
 ## 13.5 Certificates, Passports, and Compliance as a Cost Center
+
+The chapter's fourth market is the one where the counterfactual is
+statutory rather than commercial, which changes every margin in the
+analysis.
 
 Section 10.4 framed regulation as demand; the economic statement is that
 compliance is a cost center whose size the architecture reduces. Battery
@@ -480,6 +499,9 @@ budget-constrained verifiers drowning in documentary evidence — may move
 administrations that market-efficiency arguments never reach.
 
 ## 13.6 Adoption Economics: Who Pays, Who Benefits, and the Gap
+
+Everything above priced the destination; this section prices the journey,
+which is where architecture proposals actually die.
 
 The architecture's costs land early and concentrated; its benefits land late and
 distributed. Table 13.2 makes the mismatch explicit, because it — not
@@ -566,7 +588,9 @@ than a neglect.
 ### 13.6.1 Sequencing: How the First Deployments Chain
 
 The incidence analysis composes into a deployment sequence specific
-enough to falsify. *First movers:* battery-passport compliance programs
+enough to falsify — a forecast the falsification section will hold this
+chapter to, and a planning scaffold for readers deciding where their own
+organization enters the loop. *First movers:* battery-passport compliance programs
 (Section 12.2's forecast — the record-keeping is mandatory, the
 verifiability margin is small) and high-value diligence moments
 (portfolio acquisitions, where a single transaction funds its own
@@ -622,7 +646,9 @@ interest.
 Rent reallocation is the chapter's conservative core; the completeness of
 the account requires the markets that do not exist yet, because
 infrastructure that lowers verification costs historically creates
-industries its designers did not price.
+industries its designers did not price. Three are visible from here, in
+descending order of certainty, with the section's speculative character
+declared at each step.
 
 **Verification services** is the certain one — Chapter 6's tiering and
 Chapter 11's campaigns already assume it: accredited firms operating
