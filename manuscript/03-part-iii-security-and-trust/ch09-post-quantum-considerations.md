@@ -121,7 +121,8 @@ Section 9.4 are, at bottom, ways of transferring evidential weight from signatur
 (fragile) onto anchored structure (robust) *before* the signatures fail.
 
 The asymmetry between the two primitive families deserves its physics-level
-sentence, because it grounds the whole strategy. Shor's algorithm solves the
+sentences, because it grounds the whole strategy and because getting it
+slightly wrong produces migration plans that are slightly wrong everywhere. Shor's algorithm solves the
 specific number-theoretic problems (integer factoring, discrete logarithms)
 on which RSA and elliptic-curve signatures rest, with an exponential
 speedup — a CRQC does not weaken these schemes, it *ends* them. Grover's
