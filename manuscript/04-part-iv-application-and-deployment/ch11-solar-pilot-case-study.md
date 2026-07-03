@@ -78,6 +78,10 @@ with their costs, because a case study's negative results are its most
 transferable content. And the program's specifics — one OEM, one climate,
 one regulatory context — are flagged wherever they limit generalization,
 with Chapter 12 carrying the generalization burden the pilot cannot.
+Program identities are withheld pending the sponsors' publication
+clearances (the placeholder in this chapter's references); every claim
+made here is checkable against the program's technical reports once
+released, and the numbers were prepared on that assumption.
 
 ### 11.1.1 The Build, Phase by Phase
 
@@ -102,20 +106,27 @@ secure-element retrofit boards for the existing EL and flash stations,
 HSM ceremonies, and the enrollment exception paths of Section 4.3.1.
 The integration consumed roughly four times the effort of the ledger
 deployment itself — the ratio Section 7.6's cost model warns about, here
-measured.
+measured — and its critical-path item was neither software nor silicon
+but the factory's own change-control process, which treats any
+modification to a qualified production line with a conservatism the
+program learned to schedule around rather than argue with.
 
 *Phase 2 — Ledger and custody (six weeks).* Validator deployment across
 the eight members, contract suite audit and deployment, anchoring agents
 against two public chains, custody stores with retrievability challenges.
 The shortest phase, as Chapter 7 predicted: consensus infrastructure at
-these loads is genuinely small.
+these loads is genuinely small, and the phase's only schedule event was
+an HSM shipment stuck in customs — a sentence the program's blockchain
+skeptics have enjoyed ever since.
 
 *Phase 3 — Field tooling (four months, overlapping construction).*
 Handheld verification kits, work-order system integration for the O&M
 prime, inverter commissioning self-attestation firmware, and drone
 campaign tooling. The phase that generated the most schedule risk,
 because it coupled to the EPC's construction calendar, which no software
-plan controls.
+plan controls — the inverter firmware in particular shipped in the last
+week it usefully could have, after a certification-lab queue the program
+had not budgeted, and successors should book that lab slot at kickoff.
 
 *Phase 4 — Operations and exercises (ongoing).* Commissioning at
 construction pace, the verification and adjudication scenarios of
