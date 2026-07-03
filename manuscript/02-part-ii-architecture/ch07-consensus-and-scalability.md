@@ -321,6 +321,19 @@ read tier, in other words, scales like a content-distribution problem because
 it has been *made* one, and content distribution is the best-understood
 scaling problem in computing.
 
+The read tier also inherits, for free, every distribution optimization the
+web has built: proofs and headers are static, immutable content, cacheable
+at any edge, hostable from object storage, mirrorable by interested parties
+without coordination. An asset's record bundle can ship *with* the asset —
+on the handheld that scanned it, in the data room of the transaction that
+sells it, on physical media in a project's closing binder — and remains
+verifiable against public anchors from any of those copies indefinitely.
+Availability of the verification path, in the limit, does not depend on
+anyone's servers at all; it depends on the survival of copies, which is a
+property owners can secure for themselves. Systems whose verification
+requires calling the operator's API have quietly reintroduced the central
+registry; this one, by design, has not.
+
 One warning keeps the read tier honest: replicas serve *proofs*, and clients
 must check them. The convenience API that returns bare JSON without
 inclusion proofs will be built (it always is), widely used (it is easier),
@@ -497,7 +510,12 @@ size should be set by *institutional* logic: broad enough that no plausible
 coalition of interest reaches a third, small enough that every member's
 operational competence can be individually audited. Beyond thirty,
 federation (Section 7.4) is the better spend of institutional complexity
-than a larger single committee.
+than a larger single committee. The adverse-interest arithmetic is the
+subtle half of sizing: a sixteen-member committee of fifteen manufacturers
+and one insurer tolerates five Byzantine members in theory and one trade
+dispute in practice, so composition rules — caps per role class, mandated
+representation for verification-consuming roles — belong in the consortium
+agreement beside the number itself.
 
 ### 7.5.1 Who Pays for Consensus: The Fee Model
 
@@ -698,7 +716,12 @@ what first exercises are for.
 
 **What must survive the consortium itself?** The terminal scenario —
 governance collapse, funding failure, regulatory dissolution — is the one a
-thirty-year system must plan for in writing. The survival kit is already
+thirty-year system must plan for in writing, and the one that industry
+consortia, whose median lifetime is far shorter than a module warranty,
+historically plan for least. The sector has watched trade associations
+dissolve, standards bodies merge away, and joint ventures unwind; none of
+those precedents destroyed evidence, because none held any. This one will,
+unless the dissolution path is engineered. The survival kit is already
 built: public headers and anchors (world-readable forever), payload custody
 under contracts that survive the consortium's dissolution (archival
 custodians' obligations run to the *data subjects*, not to the consortium),
