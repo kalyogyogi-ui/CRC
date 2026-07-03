@@ -116,7 +116,8 @@ part-evidential, part-operational hybrid that neither chapter of requirements
 can then be verified against. Concretely, each evidential record on the
 consortium ledger carries:
 
-- the asset DID and event type (schema of Chapter 5);
+- the asset DID and event type (schema of Chapter 5), the pair that every
+  index and every verification traversal keys on;
 - a **digest** of the canonical serialization of the full event payload;
 - a **content reference** — a locator for the payload in one or more off-chain
   stores, deliberately separated from the digest so that storage can migrate over
