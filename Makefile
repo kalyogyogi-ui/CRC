@@ -60,7 +60,7 @@ $(OUT_DOCX_BM_DIR)/$(notdir $(basename $(1))).docx: $(1) $(METADATA) | $(OUT_DOC
 endef
 $(foreach f,$(BACK_MATTER_SRCS),$(eval $(call BACK_MATTER_DOCX_RULE,$(f))))
 
-.PHONY: all docx pdf wordcount clean output output-docx output-md output-chapters output-front-matter output-back-matter list-outputs zip
+.PHONY: all docx pdf wordcount clean output output-docx output-md output-chapters output-front-matter output-back-matter list-outputs zip figures figures-zip
 
 all: output zip
 
@@ -120,9 +120,19 @@ list-outputs:
 	@find $(OUT_MD_DIR) -name '*.md' 2>/dev/null | wc -l | xargs -I{} echo "  {} markdown files in $(OUT_MD_DIR)/"
 
 ZIP_FILE := manuscript-exports.zip
+FIGURES_ZIP := manuscript-figures.zip
+FIGURES_DIR := output/figures
+FIGURES_SCRIPT := scripts/extract-and-render-figures.py
 
-zip: output $(OUTPUT_DIR)/README.md
-	cd $(OUTPUT_DIR) && zip -r ../$(ZIP_FILE) docx markdown README.md
+figures: $(FIGURES_SCRIPT) $(SOURCES)
+	python3 $(FIGURES_SCRIPT)
+
+figures-zip: figures
+	cd $(OUTPUT_DIR) && zip -r ../$(FIGURES_ZIP) figures
+	@echo "Created $(FIGURES_ZIP) ($$(du -h $(FIGURES_ZIP) | cut -f1))"
+
+zip: output $(OUTPUT_DIR)/README.md figures
+	cd $(OUTPUT_DIR) && zip -r ../$(ZIP_FILE) docx markdown figures README.md
 	@echo "Created $(ZIP_FILE) ($$(du -h $(ZIP_FILE) | cut -f1))"
 
 clean:

@@ -1,0 +1,17 @@
+flowchart LR
+    subgraph WRITE [Event time]
+        E[Event payload:<br>report, image,<br>defect map] --> C[Canonical<br>serialization]
+        C --> D[Digest]
+        C --> S1[(Owner store)]
+        C --> S2[(Manufacturer store)]
+        C --> S3[(Archival store)]
+        D --> TX[Ledger transaction:<br>DID, type, digest,<br>refs, signatures]
+    end
+    TX --> LED[Consortium ledger]
+    LED --> ANC[Public-chain anchor]
+    subgraph READ [Verification time, years later]
+        V[Verifier]
+    end
+    V -.-> S3
+    V -.-> LED
+    V -.-> ANC

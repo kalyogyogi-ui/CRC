@@ -1,0 +1,29 @@
+# Figure 9.1
+
+**The migration timeline as the schema sees it: overlapping algorithm validity intervals, periodic re-anchors, and hardware re-attestation waves. A verifier at any point evaluates each record against the policy in force at its creation, plus the re-anchor chain since.**
+
+Source chapter: `ch09-post-quantum-considerations.md`
+
+![Figure 9.1](figure-9-1.png)
+
+## Mermaid source
+
+```mermaid
+flowchart LR
+    subgraph ERA1 [Era 1: classical]
+        E1[Events signed ECDSA<br>digests SHA-256]
+    end
+    subgraph TRANS [Transition window]
+        H[Hybrid signing<br>ECDSA + ML-DSA<br>dual digests]
+        RA1[Re-anchor R1:<br>whole ledger under<br>PQC hash + SLH-DSA]
+        RE[Instrument fleet<br>re-attestation P3]
+    end
+    subgraph ERA2 [Era 2: post-quantum]
+        E2[Events signed ML-DSA /<br>SLH-DSA for roles]
+        RA2[Periodic re-anchors<br>continue as policy]
+    end
+    E1 --> H --> E2
+    E1 -. authority preserved via .-> RA1
+    RA1 --> RA2
+    H --> RE
+```

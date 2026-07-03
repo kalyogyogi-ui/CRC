@@ -54,8 +54,18 @@ make list-outputs    # list generated DOCX paths and sizes
 | `output/docx/front-matter/*.docx` | Title, foreword, preface, etc. (6 files) |
 | `output/docx/back-matter/*.docx` | Glossary, appendices, references, index (5 files) |
 | `output/markdown/` | Mirror of all source `.md` files + `metadata.yaml` |
+| `output/figures/` | **23 figures** — per chapter: PNG, SVG, Mermaid `.mmd`, caption `.md` |
 
 Source Markdown lives in `manuscript/`; `output/markdown/` is regenerated on each `make output`.
+
+### Figures (`make figures`)
+
+```sh
+make figures       # render all Mermaid figures to output/figures/
+make figures-zip   # manuscript-figures.zip
+```
+
+Each figure folder: `output/figures/chNN-…/figure-N-N.{png,svg,mmd,md}`
 
 ## Status
 

@@ -1,0 +1,18 @@
+flowchart LR
+    subgraph PUB [Public zone]
+        AN[Anchors on public chains]
+        AG[Attested aggregates:<br>fleet stats, recovery<br>mass balances]
+    end
+    subgraph CONS [Consortium zone]
+        LED[Ledger: asset DIDs,<br>role DIDs, event envelopes,<br>digests only]
+    end
+    subgraph PRIV [Controlled zone]
+        PAY[(Payload custody:<br>images, maps, terms)]
+        REG[(Party registry:<br>role DID → legal person,<br>site → address)]
+    end
+    LED --> AN
+    LED --> AG
+    PAY -. digests .-> LED
+    REG -. role DIDs .-> LED
+    AUTH[Authorized verifier<br>dispute / audit / diligence] --> REG
+    AUTH --> PAY

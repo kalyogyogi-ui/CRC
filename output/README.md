@@ -26,6 +26,12 @@ output/
 │   ├── front-matter/                  ← 6 files
 │   └── back-matter/                   ← 5 files
 └── markdown/                          ← mirror of manuscript/ sources
+└── figures/                           ← rendered figures (make figures)
+    ├── README.md
+    ├── ch01-the-asset-identity-problem/
+    │   ├── figure-1-1.{png,svg,mmd,md}
+    │   └── figure-1-2.{png,svg,mmd,md}
+    └── … (ch02–ch14)
 ```
 
 ## Source of truth
