@@ -42,7 +42,15 @@ record}) \rightarrow \{\text{match}, \text{no match}\}\) with two properties:
 Every identity technology in this chapter is an implementation of \(V\), and every
 one occupies a different point on the trade-off surface spanned by soundness, cost,
 and the demands placed on the object itself. The taxonomy in Figure 3.1 previews the
-chapter.
+chapter. It is worth pausing on how unusual the question is: essentially all of
+applied cryptography assumes the endpoint *is* the keyholder — authenticate the
+key and you have authenticated the party. Physical-asset identity breaks that
+assumption at the root, because the entity of interest holds no keys, computes
+nothing, and cannot participate in its own authentication. Everything
+distinctive in this chapter flows from taking that breakage seriously instead
+of papering over it with a label that holds the keys on the object's behalf —
+which is, in one sentence, the design error of every artifact-based scheme in
+the left branch of the taxonomy.
 
 **Figure 3.1** A taxonomy of binding mechanisms for physical assets. The right-hand
 branch — passive structural fingerprints — is where Chapter 6's contribution sits.
