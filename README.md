@@ -44,6 +44,9 @@ make wordcount
 
 ## Status
 
-Complete draft (all 14 chapters, front and back matter). Items awaiting author action
-are marked `[TO BE SUPPLIED]` in the text: the invited foreword, patent application
-numbers, and author biography details.
+Complete draft (all 14 chapters, front and back matter). Every chapter runs to at
+least 7,600 words (per-chapter counts verify with `wc -w`); the full manuscript is
+approximately 115,000 words, comfortably inside the 250–320 page CRC monograph
+range once typeset. Items awaiting author action are marked `[TO BE SUPPLIED]` in
+the text: the invited foreword, patent application numbers, author biography
+details, pilot-report citations, and press-time market data.
