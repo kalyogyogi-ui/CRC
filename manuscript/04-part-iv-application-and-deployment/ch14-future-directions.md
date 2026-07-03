@@ -291,7 +291,9 @@ an accreditation scheme — and the gap between known and citable is
 measured in committee-years that start only when a community shows up
 with a draft.
 
-**Table 14.1** Standardization state of the architecture's layers.
+**Table 14.1** Standardization state of the architecture's layers, from
+the working delegate's point of view: base to build on, gap to close,
+room to close it in.
 
 | Layer | Existing base | Gap | Natural venue |
 |---|---|---|---|
