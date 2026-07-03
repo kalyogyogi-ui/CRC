@@ -695,7 +695,10 @@ The chapter's threads — privacy zones, governance authorities, regulatory
 interfaces — all terminate in one legal instrument, and a book that has
 repeatedly called the consortium agreement the system's real foundation
 owes the reader its table of contents, annotated with where each clause's
-engineering lives.
+engineering lives. Treat what follows as a drafting checklist rather than
+a form: jurisdictions, member mixes, and regulatory postures will vary
+every clause's text, but a consortium whose agreement lacks any of these
+sections has left a named hole that some future incident will find.
 
 **Parties, purpose, and the pre-competitive covenant** (Section 2.4's
 lesson): an explicit statement that the shared infrastructure is
@@ -743,7 +746,9 @@ architecture honestly supports.
 public-layer permanence, custody contracts running to data subjects,
 archive handover mechanics, and successor-designation procedures. The
 clause nobody expects to use, drafted because Chapter 1's whole argument
-is that institutions are mortal and records should not be.
+is that institutions are mortal and records should not be; the drafting
+session for this clause is also, in the pilot's experience, the meeting at
+which the members finally understood what they were building.
 
 None of this drafting is exotic; every clause has precedents in payment
 consortia, standards bodies, and industry data pools. What is distinctive
