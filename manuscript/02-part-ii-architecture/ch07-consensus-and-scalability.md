@@ -57,7 +57,7 @@ single-ledger ambition.
 
 Even the continental case — every module, inverter, and battery in a large market —
 averages double-digit transactions per second, within reach of a single well-run BFT
-committee. The comparison with payment workloads, tabulated once so the
+committee running on hardware a graduate student could afford. The comparison with payment workloads, tabulated once so the
 chapter never has to argue it again:
 
 **Table 7.2** Payment-chain workload assumptions versus the asset-identity
