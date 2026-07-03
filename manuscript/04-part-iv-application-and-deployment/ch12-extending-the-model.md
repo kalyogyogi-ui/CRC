@@ -192,7 +192,8 @@ terminus), and *warranty return to the OEM* (a custody loop, not a
 terminus). Each fork is an event pattern already in the schema's
 grammar; what batteries add is the frequency with which assets take
 them, and therefore the commercial weight on the paths solar treats as
-edge cases.
+edge cases — a pack is likelier to be remanufactured than a module is
+to be resold, and the schema's traffic statistics will show it.
 
 The actor map differs from solar's in ways that reshape consortium
 design, and getting it on paper early is the battery deployment's
