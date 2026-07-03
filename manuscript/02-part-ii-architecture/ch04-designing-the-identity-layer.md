@@ -108,8 +108,13 @@ and enrollment folded into measurements the factory already makes.
 ## 4.2 The On-Chain/Off-Chain Partition
 
 The rule this book applies: **the ledger stores commitments, references, and state;
-off-chain stores hold content.** Concretely, each evidential record on the consortium
-ledger carries:
+off-chain stores hold content.** The rule admits no exceptions for convenience —
+not for "small" payloads, not for fields a dashboard would like to query, not
+for data someone promises will never grow — because every exception becomes a
+precedent, and the precedents compound into exactly the bloated,
+part-evidential, part-operational hybrid that neither chapter of requirements
+can then be verified against. Concretely, each evidential record on the
+consortium ledger carries:
 
 - the asset DID and event type (schema of Chapter 5);
 - a **digest** of the canonical serialization of the full event payload;
