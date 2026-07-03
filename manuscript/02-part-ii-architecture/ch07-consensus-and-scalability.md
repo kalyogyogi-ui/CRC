@@ -37,7 +37,7 @@ Table 4.1 (registration once; lifecycle events ~0.2–1.0 per unit-year averaged
 asset classes; module-heavy mix).
 
 | Deployment | Units | Registration burst | Steady-state events | Average tx/s |
-|---|---|---|---|---|
+|:--|--:|:--|:--|--:|
 | 5 MW commercial plant | ~12,500 | one-time | ~4,000–12,000 /yr | <0.001 |
 | 100 MW utility plant | ~260,000 | production-paced | ~80,000–250,000 /yr | ~0.003–0.008 |
 | National fleet, mid-size market | ~50 M | ~5 M/yr additions | ~15–50 M /yr | ~0.5–1.6 |
@@ -109,6 +109,9 @@ conclusion is wrong for four reasons, each of which shapes a section of this cha
    finality, decades of retention (Section 7.4). Payment-chain engineering
    optimizes almost exactly the complementary profile, which is why importing
    its techniques uncritically mis-spends the complexity budget.
+
+The chapter's method, stated once: every claim below is either derived from
+Table 7.1's rows or marked as a policy choice with its dial identified.
 
 ## 7.2 Absorbing Bursts: Batching and the Merkle Aggregation Pattern
 
