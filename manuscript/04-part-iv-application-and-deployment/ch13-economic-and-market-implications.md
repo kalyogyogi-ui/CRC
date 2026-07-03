@@ -525,7 +525,7 @@ this table read carelessly.
 | Party | Pays (when) | Benefits (when) | Net position early |
 |---|---|---|---|
 | Module/battery OEM | Enrollment integration, registrar ops (now) | Warranty reserve, counterfeit defense, premium-product signaling (years) | Negative → positive with brand exposure |
-| EPC | Commissioning event discipline (now) | Dispute protection, differentiation (medium) | Mildly negative |
+| EPC | Commissioning event discipline (now) | Dispute protection, workmanship-claim defense, differentiation (medium) | Mildly negative |
 | Owner/fund | Consortium fees, custody (now) | Resale premium, financing margin, claim speed (exit-weighted) | Negative until first refinancing/exit |
 | O&M | Work-order integration (now) | Fewer disputes; but *loses* opacity margin | **Structurally ambivalent** |
 | Insurer | Verification client (small, now) | Loss variance, diligence cost, claim cost (immediate) | **First mover** — and the pilot's actual first signature |
