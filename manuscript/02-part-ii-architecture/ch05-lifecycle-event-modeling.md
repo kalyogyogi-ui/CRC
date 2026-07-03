@@ -255,6 +255,7 @@ corroboration class is enforced at write time by the state-machine contract.
 | `EVT_RECYCLE` | → Recycled (terminal) | Accredited recycler | C | Material recovery declaration, mass balance, recycler accreditation VC |
 | `EVT_DISPUTE` / `EVT_RESOLVE` | Links contested events | Any party / adjudicator | A / C | Contested event refs, resolution instrument digest |
 | `EVT_REENROLL` | New binding template supersedes old | Accredited verifier | C | New template digest, supersession ref, reason (Ch. 6, 9) |
+| `EVT_AUDIT` | Governance/audit finding appended | Auditor, monitor, or contract | A–C by finding class | Subject role/store DID, finding class, evidence digest (§4.2.1, §4.3.2) |
 
 Two vocabulary decisions deserve their rationale on the record. `EVT_FAULT` is
 deliberately cheap (Class A): raising the cost of reporting problems suppresses
@@ -495,7 +496,10 @@ Three observations from the biography. First, the *volume* confirms the
 Chapter 4 workload analysis from the unit side: twenty envelopes in 26 years,
 of which half cluster at the custody-intensive beginning and end — the ledger
 is nearly idle during the asset's long productive middle, exactly when
-operational telemetry (off-ledger) is busiest. Second, the *value moments* —
+operational telemetry (off-ledger) is busiest. The inversion is worth
+noticing because it is the opposite of what casual intuition expects from
+"asset tracking": the record system works hardest precisely when the asset
+is *not* working. Second, the *value moments* —
 the year-12 dispute, the year-19 refinancing, the year-22 resale — each
 consumed evidence recorded years earlier by parties who could not have known
 which future transaction would need it; that is the whole argument for
@@ -756,7 +760,7 @@ committed record. The schema, not the software, is the system of record.
 
 The lifecycle model records attributed events, not adjudicated states: nine states
 each defined by which events it makes legal and each carrying machine-checked
-invariants; a closed envelope vocabulary of sixteen event types whose
+invariants; a closed envelope vocabulary of eighteen event types whose
 corroboration classes price forgery at the moment of writing; payload schemas
 versioned for decades of growth under an evolution regime in which old
 versions never die and meaning never changes by stealth; and honest
@@ -774,10 +778,13 @@ rooted at manufacture, protocol-rooted in transit, accreditation-rooted at the
 terminus — and the residual exposures are named, the deepest being
 completeness, a property incentives must supply because cryptography cannot,
 attacked in its negligent, strategic, and structural species by tooling,
-preconditions, and schema evolution respectively. Among the event types, two
-carry the system's evidentiary weight: `EVT_REGISTER`, which binds the record
-to matter, and `EVT_INSPECT`, which keeps the binding honest as matter ages.
-Both rest on the measurement science of the next chapter.
+preconditions, and schema evolution respectively. The whole apparatus asks
+of the field only what its standards already require — Table 5.5's mapping —
+plus signatures in the right places, which is why it stands a chance of being
+used honestly. Among the event types, two carry the system's evidentiary
+weight: `EVT_REGISTER`, which binds the record to matter, and `EVT_INSPECT`,
+which keeps the binding honest as matter ages. Both rest on the measurement
+science of the next chapter.
 
 ## References and Further Reading
 
