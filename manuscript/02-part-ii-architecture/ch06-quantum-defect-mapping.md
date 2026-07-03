@@ -553,6 +553,26 @@ been decomposed into checkable parts, and the unverifiable residue has been made
 small, explicit, and insurable. That decomposition — not any single measurement —
 is the chapter's contribution.
 
+Run the Chapter 1 transaction's numbers under the new regime to close the
+loop. The 10 MW acquisition's status-quo diligence: a 200-module flash
+campaign at roughly USD 150 per unit all-in — USD 30,000 — answering the
+condition question weakly and the identity and completeness questions not at
+all, followed by a seven-figure residual-uncertainty discount. Under the
+workflow: Steps 1–2 run in software across all 25,000 modules for effectively
+nothing, answering identity-of-record and history-completeness questions
+outright; a pre-committed 300-unit V2 campaign at USD 10–20 per unit —
+USD 3,000–6,000 — answers the matter-matches-record question at 95/1
+confidence; escalation reserves another few thousand for anomalies. Total
+verification spend falls by roughly 80% *while* the questions answered
+expand from one to three, and the residual discount compresses toward the
+genuinely unverifiable remainder (enrollment-era substitution, unrecorded
+events) — which Chapter 13 argues is precisely the fraction of the old
+discount an insurer will now underwrite for a fee, because for the first
+time it is enumerable. The seller of good assets recovers most of the
+information rent; the seller of bad ones finds the workflow pricing them
+accurately; and both outcomes are the market working, which is all this
+architecture ever promises.
+
 ## 6.7 Economics and Deployment Tiers
 
 The mechanism must clear Section 1.3's unit economics. The architecture's answer is
