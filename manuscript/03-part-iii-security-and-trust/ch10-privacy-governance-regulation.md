@@ -125,7 +125,7 @@ in Section 11.6).
 | Registrar accreditation / revocation | Accreditation committee, adverse-interest quorum | Revocations are ledger events (D5, §8.6) |
 | Schema and payload versioning | Technical committee | Old versions verifiable forever (§5.1, §9.4) |
 | Contract upgrades | Supermajority + timelock, on-ledger | §2.5's trusted-administrator caveat |
-| Algorithm policy & re-anchor cadence | Migration authority quorum | §9.6's register |
+| Algorithm policy & re-anchor cadence | Migration authority quorum | §9.7's register |
 | Party-registry disclosure triggers | Defined in agreement; adjudicator for contested cases | §10.2's mechanism 1 |
 | Custody policy & retrievability SLAs | Operations committee | §4.2's proof-of-retrievability regime |
 | Validator admission / expulsion | Supermajority, on-ledger | Committee sizing of §7.5 |

@@ -8,7 +8,7 @@ are chapter/section references for the indexer's orientation.*
 **active binding** — 3.3; applicability by asset class, 3.3; inverters, 11.1
 **adverse selection** — *see* lemons problem
 **Akerlof, G.** — 1.4.4, 13.1
-**algorithm policy register** — 9.6, A.4
+**algorithm policy register** — 9.7, A.4
 **anchoring, public-chain** — 4.4; cost, 7.6; evidentiary standing, 11.3, 11.5
 **asset identity, four properties of** — 1.2; scored against mechanisms, 1.5
 **attack families F1–F12** — 8.2–8.5, 12.4

@@ -245,7 +245,7 @@ interface IRoleAccred {
         external view returns (bool);
 
     /// Verifies `sig` over `digest` under the algorithm policy that the
-    /// on-ledger policy register (Section 9.6) declares in force for
+    /// on-ledger policy register (Section 9.7) declares in force for
     /// this role at `atTime`. Hybrid-era policies require both classical
     /// and PQC components to verify.
     function verifyByPolicy(bytes32 roleDid, bytes calldata sig,
