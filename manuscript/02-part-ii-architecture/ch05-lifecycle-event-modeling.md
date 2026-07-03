@@ -42,7 +42,9 @@ came before:
    observations and acts, each attributed and timestamped. Current state (who is the
    custodian, is the asset commissioned) is *derived* by replaying events. Recording
    state directly invites the silent overwrite; recording events makes every change
-   somebody's signed act.
+   somebody's signed act. The database community reached the same conclusion
+   from performance and auditability directions under the name *event
+   sourcing*; this schema is event sourcing with adversaries.
 2. **The schema records claims with authorship, not adjudicated truth.** A fault
    event asserts "party X reported observation Y." Where parties disagree, both
    events stand, linked by a dispute reference; resolution is itself an event. The
@@ -54,6 +56,9 @@ came before:
    corroboration class of Section 4.5). On what evidence (payload digests and
    provenance-chain references). In what context (references to prior events —
    installations reference deliveries, claims reference condition records).
+   An event that cannot answer all six is not rejected as immoral; it is
+   rejected as *unfinished*, and the reason codes of Section 5.5 tell the
+   submitter which answer is missing.
 4. **Extensible payloads, closed envelope.** The envelope — the six answers above —
    is fixed and machine-enforced. Payload schemas are versioned per event type, so
    the vocabulary can grow (a new inspection modality, a new battery SoH metric)
@@ -142,12 +147,22 @@ scrap, warranty return, or secondary-market inventory — the removal event does
 yet know which. Collapsing these produced, in earlier industry databases, the
 systematic mislabeling of resold equipment as end-of-life. The `Removed → InTransit`
 arrow is precisely the secondary market of Section 1.4.4, now a first-class,
-history-preserving path.
+history-preserving path. The distinction also carries regulatory weight:
+extended-producer-responsibility accounting needs to know whether a unit left
+service *permanently* (a decommissioning, entering the waste stream's mass
+balance) or *provisionally* (a removal, still an asset), and databases that
+conflated the two have made the sector's official end-of-life statistics —
+the inputs to recycling-capacity planning — systematically wrong in a known
+direction.
 
 **`Suspended` exists because plants do.** Curtailment seasons, insurance disputes,
 long supply-chain waits for replacement parts — an asset can be physically present
 and deliberately non-operational for months. Without the state, real operations
-falsify either `Commissioned` or `Removed`.
+falsify either `Commissioned` or `Removed`. The state earns its place under the
+strict criterion above because different events are legal within it:
+production-dependent claims are suspended with the asset, while condition and
+maintenance events continue — which is exactly the evidential profile of a
+plant idled by a grid dispute, still inspected, not producing.
 
 **Ownership and custody are orthogonal to lifecycle state.** `EVT_OWNERSHIP_TRANSFER`
 and `EVT_CUSTODY_TRANSFER` change *derived registers* (who owns, who holds) without
@@ -337,7 +352,14 @@ shared folder and evidence, purchased at the cost of integration software
 rather than of new field procedure. Where the mapping is *not* one-to-one —
 the dual-signed custody transfer replacing the one-sided delivery receipt is
 the main case — the change is the point, not an accident, and the affected
-workflow gets explicit treatment in the deployment chapters.
+workflow gets explicit treatment in the deployment chapters. The mapping also
+supplies the migration path for history: an owner holding twenty years of
+legacy documentation can *backfill* it as referenced payloads on retroactive
+registrations — signed by the party vouching for each document today, dated
+honestly with both the document's claimed date and the backfill's ledger
+time — so that legacy paper enters the system as what it is (attributed,
+unverifiable-at-origin claims) rather than being either discarded or
+laundered into contemporaneous evidence.
 
 ## 5.4 The Envelope Schema
 
@@ -424,7 +446,12 @@ Section 4.5); the manufacturer's rebuttal reaches back to factory enrollment;
 and every box resolves to signed, anchored, digest-committed bytes. The
 traversal touches perhaps a dozen events out of the module's lifetime few
 hundred — the DAG is why verification cost scales with the *question*, not
-with the asset's age.
+with the asset's age. Note also what the DAG's *shape* communicates before
+any payload is opened: a claim citing no condition records, or citing records
+whose instruments have no calibration edges, is structurally weak in a way a
+policy engine can score mechanically — the graph is a triage instrument as
+well as an evidence index, and Chapter 11's insurer client exploits exactly
+that.
 
 ### 5.4.1 A Complete Biography in Events
 
