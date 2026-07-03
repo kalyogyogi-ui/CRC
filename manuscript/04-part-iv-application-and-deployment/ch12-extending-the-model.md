@@ -24,8 +24,10 @@ makes unavoidable and which the passport regulations are quietly deciding.
 
 ## 12.1 The Generalization Test
 
-A framework generalizes if its abstractions carry over while only its parameters
-change. The candidate abstractions from Parts I–III: the four identity properties
+A framework generalizes if its abstractions carry over while only its
+parameters change — and the claim must be earned per class, because the
+graveyard of "general" architectures is filled with solar systems wearing
+battery costumes. The candidate abstractions from Parts I–III: the four identity properties
 (Section 1.2); active-versus-passive binding with the R1–R6 requirements
 (Sections 3.3–3.4, 6.5); the envelope-plus-state-machine event model (Chapter 5);
 tiered assurance (Section 6.7); and the three-zone privacy topology (Chapter 10).
@@ -162,7 +164,8 @@ SoH measurement at transition is a second-life valuation input that no
 party can quietly improve, which is precisely the missing instrument of
 Section 1.4.4's battery lemons problem.
 
-Safety events add a battery-specific record class with regulatory teeth:
+Safety events add a battery-specific record class with regulatory
+teeth — and with the strongest incentive asymmetry in the whole chapter:
 thermal incidents, abuse events flagged by the BMS, and transport-
 classification changes (a damaged pack becomes dangerous goods with
 different carriage rules) all demand the same contemporaneous, attributed,
@@ -405,7 +408,9 @@ maps with four adaptations:
   solar soiling-loss records.
 
 A blade biography, compressed, to show the machinery running on wind's
-characteristic path — the *repair loop* that solar barely has. Blade
+characteristic path — the *repair loop* that solar barely has, and the
+path on which the sector's undocumented-repair disputes have
+traditionally been fought. Blade
 B-7741 enrolls at manufacture (sectioned ultrasonic template, embedded
 tag, materials manifest), installs on turbine T-112, and accumulates
 load-milestone events at each annual inspection. Year nine: lightning
@@ -424,8 +429,9 @@ base-schema machinery except the repair class and the milestone
 aggregates: a two-item delta for a sector whose provenance disputes
 predate solar's entire existence.
 
-Offshore wind sharpens every number in the onshore story and adds one
-structural wrinkle. Component values multiply (installation vessels cost
+Offshore wind sharpens every number in the onshore story — and supplies
+the framework's best cost-benefit ratio anywhere in this chapter — while
+adding one structural wrinkle. Component values multiply (installation vessels cost
 more per day than most repairs cost outright, so *avoiding one unnecessary
 jack-up campaign* can justify a plant's entire identity infrastructure);
 inspection access is scarce and weather-gated, which raises the value of
@@ -579,7 +585,9 @@ large fleets enroll under proprietary template formats, the switching costs will
 entrench whatever shipped first.
 
 The portfolio verifier's day, walked once, makes the interoperability
-stakes concrete. An infrastructure fund's monitoring client wakes to
+stakes concrete — and every reader who manages mixed-asset infrastructure
+will recognize the translation layer in it, because they are paying for
+one now under a different name. An infrastructure fund's monitoring client wakes to
 verify overnight events across its holdings: solar plants on two national
 federations, a battery portfolio on a storage-sector consortium, wind
 assets on the manufacturer-led ledger their turbines shipped with. At the
@@ -643,8 +651,10 @@ all assets, which would be wrong for most of them.
 ## 12.6 Beyond the Big Three: The Framework's Edges
 
 Generalization claims are tested at their edges, so the chapter closes by
-running the triple over the asset classes the proposal did not name — and
-by stating plainly where the framework stops paying.
+running the triple over the asset classes the earlier sections did not
+reach — and by stating plainly where the framework stops paying, because
+an architecture that claims to fit everything fits nothing in
+particular.
 
 **Electrolyzers and fuel-cell systems** map almost boringly well: high
 unit values, active binding trivially available (they are instrumented
@@ -708,7 +718,9 @@ together rather than a decade apart, as silicon's did.
 machinery rather than any binding: a microgrid is a plant-like legal
 object (it holds interconnection and islanding agreements — it passes the
 Section 3.6.1 test and earns a DID) whose membership is unusually fluid,
-composed of assets under many small owners. The framework handles it as a
+composed of assets under many small owners, and whose regulatory forms
+(the EU's energy-community directives, community-solar programs in US
+states) are multiplying faster than their record-keeping practices. The framework handles it as a
 membership register with consent-aware events — an asset's enrollment
 into a community is a dual-signed event like any custody act — and the
 privacy design of Chapter 10 does the heavy lifting, since community
@@ -725,8 +737,9 @@ inherit protection *indirectly* — as composition references inside assets
 that pass — which is the framework's graceful floor, and the reason its
 edges are boundaries rather than cliffs.
 
-One final generalization runs outward rather than across: nothing in the
-framework's core is energy-specific. Manufactured assets with stochastic
+One final generalization runs outward rather than across — a paragraph
+this book permits itself after a volume's worth of restraint: nothing
+in the framework's core is energy-specific. Manufactured assets with stochastic
 structure, multi-decade lives, fragmented custody, and value-bearing
 histories exist in construction equipment, rail rolling stock, medical
 devices, and aerospace's cost-pressured lower tiers — and each has its
