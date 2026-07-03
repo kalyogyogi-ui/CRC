@@ -61,7 +61,7 @@ stateDiagram-v2
     InTransit --> Installed: EVT_INSTALL
     Registered --> Installed: EVT_INSTALL
     Installed --> Commissioned: EVT_COMMISSION
-    Commissioned --> Commissioned: EVT_INSPECT / EVT_MAINTAIN /<br>EVT_FAULT / EVT_OWNERSHIP_TRANSFER
+    Commissioned --> Commissioned: EVT_INSPECT, EVT_MAINTAIN, EVT_FAULT, EVT_OWNERSHIP_TRANSFER
     Commissioned --> Suspended: EVT_SUSPEND
     Suspended --> Commissioned: EVT_RECOMMISSION
     Commissioned --> Removed: EVT_REMOVE
