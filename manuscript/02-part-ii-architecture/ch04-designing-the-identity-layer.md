@@ -121,7 +121,9 @@ consortium ledger carries:
 - a **content reference** — a locator for the payload in one or more off-chain
   stores, deliberately separated from the digest so that storage can migrate over
   decades without touching the evidence;
-- the submitter's signature and the oracle attestations of Section 4.5.
+- the submitter's signature and the oracle attestations of Section 4.5, each
+  carrying its algorithm-policy reference so that verification decades later
+  evaluates the signature against the rules in force when it was made.
 
 Verification then composes: fetch payload from any store, hash it, compare against
 the on-chain digest, check the digest's inclusion in an anchored block (Section 2.2's
