@@ -42,7 +42,13 @@ below Section 7.5's target range; the consortium agreement (Section 11.6)
 provides for expansion to 12–16 with the second plant, and the pilot accepts the
 weaker \(f = 2\) fault bound as a documented, temporary risk.
 
-Recruitment order mattered and is reported for successors. The insurer
+The role assignments follow Part II's logic deliberately: both OEMs hold
+registrar accreditations for their own products; the certifier and
+university carry the accreditation-committee load precisely because they
+sell nothing into the plant; and the O&M contractor — the party lesson 3
+will feature — was given a technical-committee seat at the owner's
+insistence, over objections the S2 episode retroactively settled in the
+owner's favor. Recruitment order mattered and is reported for successors. The insurer
 signed first — Chapter 13's incidence analysis predicts exactly this, and
 its early commitment converted two hesitant parties (the owner, whose fund
 wanted the diligence-cost story validated by the party who would pay it,
@@ -385,6 +391,14 @@ sampling design surviving its first hostile review when the owner's fund
 auditors, initially skeptical that 380 units could speak for 126,000,
 were walked through the acceptance-sampling arithmetic their own
 procurement standards already used.
+
+The insurer's continuous Step-1/2 subscription deserves its own line in
+the record: across the year it processed every new event on the covered
+fleet within minutes of anchoring, raised four policy flags (two
+instrument-grade downgrades, one cadence anomaly that proved to be a
+paused cleaning contract, and the S3 finding's precursor), and cost the
+insurer, by its own account, one analyst-day a month to operate — the
+"verification as subscription" economics that Chapter 13 builds on.
 
 The two mismatches deserve their epilogue because they exercised the whole
 escalation machine: re-measurement excluded instrument error; template
