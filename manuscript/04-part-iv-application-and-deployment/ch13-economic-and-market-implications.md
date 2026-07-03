@@ -529,7 +529,7 @@ this table read carelessly.
 | Owner/fund | Consortium fees, custody (now) | Resale premium, financing margin, claim speed (exit-weighted) | Negative until first refinancing/exit |
 | O&M | Work-order integration (now) | Fewer disputes; but *loses* opacity margin | **Structurally ambivalent** |
 | Insurer | Verification client (small, now) | Loss variance, diligence cost, claim cost (immediate) | **First mover** — and the pilot's actual first signature |
-| Recycler | Accreditation, mass-balance events | Regulated-market access (immediate under passports) | Positive where regulated |
+| Recycler | Accreditation, mass-balance events | Regulated-market access (immediate under passports); verified feedstock provenance | Positive where regulated |
 | Secondary buyer | Verification cost (per deal) | Full lemons-rent reallocation | Positive per transaction |
 
 Two rows repay the closer look. The *OEM's* early-negative position
