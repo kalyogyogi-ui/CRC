@@ -37,10 +37,25 @@ manuscript/
 Requires `pandoc` (≥ 3.0) and, for PDF output, a LaTeX distribution.
 
 ```sh
-make docx    # manuscript.docx — for submission to the publisher
-make pdf     # manuscript.pdf  — for review reading
+make output          # full export bundle → output/ (see output/README.md)
+make zip             # output/ + manuscript-exports.zip at repo root
+make docx            # legacy: manuscript.docx at repo root
+make pdf             # manuscript.pdf at repo review
 make wordcount
+make list-outputs    # list generated DOCX paths and sizes
 ```
+
+### Export layout (`output/`)
+
+| Path | Contents |
+|------|----------|
+| `output/docx/complete/manuscript-complete.docx` | Full book |
+| `output/docx/chapters/ch01-…ch14-….docx` | One DOCX per chapter (14 files) |
+| `output/docx/front-matter/*.docx` | Title, foreword, preface, etc. (6 files) |
+| `output/docx/back-matter/*.docx` | Glossary, appendices, references, index (5 files) |
+| `output/markdown/` | Mirror of all source `.md` files + `metadata.yaml` |
+
+Source Markdown lives in `manuscript/`; `output/markdown/` is regenerated on each `make output`.
 
 ## Status
 
