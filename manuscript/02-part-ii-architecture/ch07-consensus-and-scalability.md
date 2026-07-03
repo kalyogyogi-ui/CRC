@@ -196,7 +196,8 @@ pre-committed baselines already exist; the alternative world's catastrophe
 season is Section 1.4.3's dispute triangle, multiplied by a weather map.
 
 *The closing day.* A 250,000-module plant changes hands at a contractual
-instant. The transfers were prepared as signed batch trees days earlier in
+instant — the burst whose peak-to-average ratio is technically infinite,
+since a quarter-million ownership facts become true simultaneously. The transfers were prepared as signed batch trees days earlier in
 escrow with the closing's legal documents; at the agreed block height the
 escrow agent submits the batch commitments — a few dozen transactions — and
 an event-triggered anchor (Section 4.4) fixes the closing into two public
@@ -599,8 +600,8 @@ cold-export media refresh. Validator share allocates one-sixteenth of a
 volume. Nothing in the table depends on any component's vendor pricing;
 every line is commodity.
 
-Sensitivity, briefly, because the conclusion survives every plausible
-perturbation: double every event frequency and consensus state reaches
+Sensitivity, briefly, because a model whose conclusion flips under
+perturbation is a rhetorical device, and this one is not: double every event frequency and consensus state reaches
 twelve megabytes; assume post-quantum envelope inflation (Section 9.3's
 2–4 kB signatures, hybrid-doubled) and it reaches perhaps fifty — still
 nothing. The cost total is dominated by custody and anchoring, both linear
