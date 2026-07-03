@@ -232,8 +232,17 @@ bolted onto a physical binding none of the peers possess.
 Selection criteria differ from enterprise IT in two respects: signature *size*
 lands on a replicated ledger and in secure elements with decade-long hardware
 cycles, and algorithm *diversity* matters more than optimality because the system
-must survive the failure of any single family. Two candidate families are
-deliberately absent from the selection and should be noted with reasons. The
+must survive the failure of any single family. Stated as criteria: maturity
+of cryptanalysis (age and intensity of adversarial attention), assumption
+diversity (no single mathematical failure should strand every role),
+implementability in constrained silicon (the P3 wave needs elements, not
+servers), size-against-role fit (bulk tolerable where events are
+batch-paced, not where handhelds verify in the field), and standardization
+status (a thirty-year system cites standards, not preprints). The
+selections below are the criteria applied; disagreements should be argued
+criterion by criterion rather than brand by brand. Two candidate families
+are deliberately absent from the selection and should be noted with
+reasons. The
 *stateful* hash-based schemes (XMSS, LMS) offer smaller signatures than
 SLH-DSA on the same conservative assumptions, at the price of state
 management — a signer must never reuse a one-time key index, which turns
@@ -307,7 +316,13 @@ sets at the 128-bit post-quantum security level.
 | Anchoring account keys | Per target chain + SLH-DSA co-signature on anchor payload | varies | Chain's algorithm is not ours to choose; co-signature preserves our own verifiability |
 | Transition decade (all roles) | Hybrid: ECDSA + PQC | sum of both | Protects against both threat directions during immaturity |
 
-The envelope-size consequence is worth one arithmetic sentence: a Class C
+Verification performance, the criterion field hardware feels first: ML-DSA
+verification is fast — comfortably thousands of signature checks per second
+on handheld-class processors — so Step-1 verification of a record bundle
+remains interactive even when every signature in it is post-quantum;
+SLH-DSA verification is slower but appears only at the batch and
+governance cadence where nobody is standing on a roof waiting. The
+envelope-size consequence is worth one arithmetic sentence: a Class C
 event carrying three hybrid signatures grows from under a kilobyte to
 roughly 10–15 kB during the transition decade and settles near 8–12 kB in
 era 2 with SLH-DSA-signing roles in the mix — which multiplies Table 7.4's
@@ -516,12 +531,17 @@ not get cheaper when mathematics does. In the post-quantum era the
 architecture's trust budget quietly rebalances — less weight on old
 signatures, more on anchored structure and measured matter — and the
 system was built from Chapter 3 onward so that this rebalancing is a
-parameter shift, not a redesign.
+parameter shift, not a redesign. There is a certain justice in the
+direction of travel: the book began by refusing to let paper outrank
+matter, and the quantum era simply enforces the refusal — when the
+mathematics protecting the paper expires, the matter is still there,
+still measurable, still itself.
 
 ## 9.6 A Worked Retrospective: One Record, Twenty-Two Years Later
 
 The chapter's machinery earns its keep only if the far end works, so run it
-forward once, concretely. The year is 2049. A warranty successor entity
+forward once, concretely — a companion to Section 2.8's trace, now with the
+cryptographic weather turned hostile. The year is 2049. A warranty successor entity
 disputes a claim turning on a commissioning event committed in March 2027 —
 signed, per Table 9.2's era-1 reality, with ECDSA by an EPC that dissolved
 in 2036, corroborated by an instrument whose vendor no longer exists, on a
@@ -532,13 +552,18 @@ adjudicator's verifier proceeds:
 1. *Locate the record's era.* The event's block height places it in
    algorithm-policy era 1; the policy register (itself verified through the
    current-era chain) states era 1's rules and their sunset at the 2033
-   hybrid transition.
+   hybrid transition. Nothing about this step required the adjudicator to
+   know any of the history in advance — the record, the register, and the
+   anchors carry their own context, which is what "self-describing
+   evidence" has meant since Chapter 4.
 2. *Establish pre-quantum fixation.* The event's inclusion proof chains to
    the 2033 re-anchor (P1) — computed redundantly under SLH-DSA and a
    512-bit hash, confirmed by five adverse members, anchored to two public
    chains whose 2033 states are themselves matters of public archive. Since
    forging the event now would require having beaten ECDSA *before 2033* —
-   years before any credible capability — the bytes are fixed.
+   years before any credible capability — the bytes are fixed, and the
+   dispute narrows from "is this record real?" to "what does this real
+   record prove?", which is where disputes belong.
 3. *Evaluate attribution by era rules.* The EPC's and instrument's
    signatures verify under era-1 algorithms against the accreditation
    register's 2027 entries (P2); the corroboration class is satisfied per
@@ -609,6 +634,17 @@ and standards-body advisories, biennial migration-readiness reports
 (instrument fleet PQC coverage, verifier-ecosystem dual-digest coverage),
 and the authority to trigger the milestone re-anchor without waiting for a
 scheduled meeting when a cryptanalytic event warrants it.
+
+Rehearsal, finally, is what separates a migration plan from a migration
+capability, and the architecture hands the consortium a rehearsal for free:
+the payload-version and template re-commitment exercises that ordinary
+schema evolution already requires (the pilot's lesson 6, Section 11.5,
+re-committed 6,300 templates through exactly the P1 machinery a decade
+before any quantum deadline) are the migration drill in miniature — same
+registers, same redundant computation, same governance events, smaller
+stakes. A consortium that has run three routine re-commitments will find
+the milestone re-anchor boring, which is the correct emotional register
+for the most consequential cryptographic operation of its life.
 
 Transparency to relying parties completes the governance design. Insurers,
 lenders, and adjudicators pricing records need to know the migration's
