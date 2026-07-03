@@ -48,7 +48,9 @@ came before:
 2. **The schema records claims with authorship, not adjudicated truth.** A fault
    event asserts "party X reported observation Y." Where parties disagree, both
    events stand, linked by a dispute reference; resolution is itself an event. The
-   ledger is the evidence locker, not the judge.
+   ledger is the evidence locker, not the judge — a division of labor the
+   legal system will recognize and, in the pilot's S4 rehearsal, visibly
+   appreciated.
 3. **Every event answers six questions.** Which asset (DID). What kind (event type
    from a closed vocabulary). When (both the physical-world time claimed by the
    submitter and the consensus time of ledger inclusion — the pair matters, since
@@ -62,7 +64,10 @@ came before:
 4. **Extensible payloads, closed envelope.** The envelope — the six answers above —
    is fixed and machine-enforced. Payload schemas are versioned per event type, so
    the vocabulary can grow (a new inspection modality, a new battery SoH metric)
-   without breaking replayability of old records.
+   without breaking replayability of old records. The pattern is the network
+   stack's oldest lesson applied to evidence: a stable, minimal header
+   beneath innovating payloads is how heterogeneous systems stay
+   interoperable across decades of change.
 5. **Late and offline entry are first-class.** Field work happens in warehouses
    without connectivity and on rooftops in the rain. Events may be signed offline and
    submitted later; the claimed-time/ledger-time split represents this honestly, and
