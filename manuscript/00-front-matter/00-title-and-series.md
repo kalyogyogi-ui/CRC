@@ -2,7 +2,9 @@
 
 **Immutable Identity, Lifecycle Traceability, and Integrity Verification for Solar and Renewable Infrastructure**
 
-[AUTHOR NAME — TO BE SUPPLIED]
+**Nagnath Savant**
+
+Pune, Maharashtra, India · nagnathsavant@gmail.com
 
 *Proposed for the CRC Press Renewable and Sustainable Energy Developments series*
 

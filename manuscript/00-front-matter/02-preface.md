@@ -88,7 +88,7 @@ disputes on condition of anonymity, and the anonymous proposal reviewers whose
 skepticism improved the structure of Part III — all have my thanks. Errors that remain
 are mine.
 
-[AUTHOR NAME]
-[CITY, COUNTRY — TO BE SUPPLIED]
+Nagnath Savant  
+Pune, Maharashtra, India
 
 \newpage

@@ -1,31 +1,22 @@
 # About the Author {.unnumbered}
 
-[AUTHOR NAME — TO BE SUPPLIED]
+**Nagnath Savant** is a blockchain researcher and technical author based in Pune,
+India. He has worked in distributed ledger systems, cryptographic protocols, and
+renewable-energy infrastructure applications since 2016. From 2017 to 2023 he was
+Assistant Professor in Electronics and Telecommunication Engineering at KJ's
+Educational Institute, KPC Pandharpur, where he taught embedded systems,
+telecommunications, and signal processing and mentored more than one hundred
+undergraduate projects.
 
-[AUTHOR NAME] is [current title] at [affiliation — TO BE SUPPLIED]. [He/She/They]
-[hold/holds] [degrees — TO BE SUPPLIED] and has worked at the intersection of
-distributed ledger systems, photovoltaic characterization, and supply-chain
-integrity for [N — TO BE SUPPLIED] years.
-
-[Two to three sentences on research focus: manufacture-time identity issuance,
-structural defect mapping bound to immutable records, consortium governance for
-energy hardware — TO BE SUPPLIED in author voice.]
-
-[AUTHOR LAST NAME] is the author of *[TITLE — PRIOR BLOCKCHAIN FUNDAMENTALS
-MONOGRAPH]* ([Publisher, year — TO BE SUPPLIED]) and *[TITLE — PRIOR
-POST-QUANTUM MIGRATION MONOGRAPH]* ([Publisher, year — TO BE SUPPLIED]), cited
-respectively in Chapters 2 and 9 of this book. Portions of the structural
-defect-mapping and verification workflow in Chapters 6 and 11 are the subject of
-a pending patent application: *[APPLICATION NUMBER, TITLE, FILING DATE — TO BE
-SUPPLIED]*.
-
-[Selected publications — 3–5 peer-reviewed citations in author voice — TO BE
-SUPPLIED.]
-
-[Professional memberships — e.g., IEEE Power & Energy Society, IEEE Computer
-Society — TO BE SUPPLIED.]
-
-[Optional: one sentence on teaching, consulting, or standards participation — TO
-BE SUPPLIED.]
+Savant is the author of *The Post-Quantum Cryptocurrency Revolution: Preparing
+Digital Assets for the Quantum Era* (2025) and has forthcoming and in-progress
+titles with Oxford University Press and Apress on blockchain fundamentals. Portions
+of the structural defect-mapping and verification workflow in Chapters 6 and 11 are
+the subject of his pending patent application, *Quantum Defect Mapping and
+Blockchain-based Identity for Solar Panels* (2026). He was selected for the Ideation
+Phase of the Blockchain India Challenge 2026. His research interests include
+post-quantum cryptography, blockchain security, asset identity for distributed
+energy systems, and the engineering migration from classical to quantum-resistant
+infrastructure.
 
 \newpage
