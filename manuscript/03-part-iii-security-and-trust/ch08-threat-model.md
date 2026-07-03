@@ -54,6 +54,13 @@ against theatrical worst cases.
 | A4 Colluding consortium subset | Rewrite or censor history | Validator keys, governance votes | Joint benefit of rewrite vs. anchor-detection ruin |
 | A5 Well-resourced external attacker | Disruption, extortion, market manipulation | Network attacks, key theft, supply-chain compromise of instruments | Not tightly bounded; rare but must be survivable |
 
+The classes compose in practice — A1 operations recruit A3 insiders, A2
+custodians hire the contractors who become A3 — and the compound-attack
+analysis of Section 8.2 treats the compositions explicitly. What the
+five-class model deliberately excludes is the irrational actor (vandalism,
+ideology), whose damage profile is availability rather than fraud and whose
+treatment is Section 7.7's, not this chapter's.
+
 The bound in the rightmost column is the model's load-bearing element. An attacker
 who must spend more than the premium a false identity earns does not attack — so
 every defense in this chapter is evaluated as a *cost multiplier* against a
@@ -221,6 +228,13 @@ matching only the modalities the verifier will actually check — which is why
 Section 3.6's escalation policy randomizes and why Tier 1 checks must vary
 modalities rather than always re-running the cheapest.
 
+Relabeling's near-relative, *grade inflation within a genuine identity* —
+leaving the object and DID honestly paired but attacking the claims attached
+at enrollment — is F2's territory and is cross-referenced here because
+buyers conflate the two: cloning fakes *which* object this is; misgrading
+fakes *what* this object is. The defenses differ correspondingly, and a
+diligence process should check both.
+
 Walking the attacker's decision tree makes the economics vivid. The would-be
 cloner of a premium module identity has four branches. *Branch one, forge the
 label*: cost near zero, defeated at V0/V1 the moment anyone resolves the DID
@@ -242,8 +256,10 @@ a well-shaped defense-in-depth looks like from the other side.
 
 **F2 — Enrollment-time substitution.** The trusted-setup attack Figure 4.2 flagged:
 enroll object X's fingerprint under object Y's product claims (premium label,
-inflated flash test). Cryptography downstream is helpless — the record is
-internally consistent forever after. Defenses are procedural and statistical:
+inflated flash test), or inflate the claims attached to an honestly
+fingerprinted object. Cryptography downstream is helpless — the record is
+internally consistent forever after, and every later verification will
+faithfully confirm the lie. Defenses are procedural and statistical:
 in-line enrollment physically coupled to the QA flow (no handling gap between
 flash test and fingerprint capture, which is precisely how Figure 4.2's line
 integration is drawn); instrument co-signing so substitution requires corrupting
