@@ -8,7 +8,10 @@ using quantum sensing to map the defect structure of photovoltaic devices, bindi
 those maps to the ledger identity record at enrollment, and building on that binding
 a verification workflow through which a downstream party — an insurer, a buyer, a
 grid operator, a warranty adjudicator — can trust a panel's recorded condition
-history without trusting its custodian. Portions of the mechanism described in
+history without trusting its custodian. Everything Part II has built converges
+here: the enrollment moment of Chapter 4 gets its measurement, the
+`EVT_REGISTER` and `EVT_INSPECT` events of Chapter 5 get their payloads, and
+the four identity properties of Chapter 1 finally get their physical root. Portions of the mechanism described in
 Sections 6.4–6.6 are the subject of my pending patent application; as promised in the
 Preface, the ideas are explained fully, and readers evaluating alternative
 integrity-verification mechanisms will find the workflow of Section 6.6 transfers to
