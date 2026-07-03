@@ -528,7 +528,7 @@ this table read carelessly.
 | EPC | Commissioning event discipline (now) | Dispute protection, differentiation (medium) | Mildly negative |
 | Owner/fund | Consortium fees, custody (now) | Resale premium, financing margin, claim speed (exit-weighted) | Negative until first refinancing/exit |
 | O&M | Work-order integration (now) | Fewer disputes; but *loses* opacity margin | **Structurally ambivalent** |
-| Insurer | Verification client (small, now) | Loss variance, diligence cost, claim cost (immediate) | **First mover** |
+| Insurer | Verification client (small, now) | Loss variance, diligence cost, claim cost (immediate) | **First mover** — and the pilot's actual first signature |
 | Recycler | Accreditation, mass-balance events | Regulated-market access (immediate under passports) | Positive where regulated |
 | Secondary buyer | Verification cost (per deal) | Full lemons-rent reallocation | Positive per transaction |
 
